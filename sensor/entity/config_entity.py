@@ -1,6 +1,6 @@
 from datetime import datetime
 import os
-# from dataclasses import dataclass
+from dataclasses import dataclass
 
 from sensor.constant.trainingPipeline_consts import *
 @dataclass
