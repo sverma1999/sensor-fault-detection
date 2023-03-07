@@ -24,19 +24,11 @@ class DataValidation:
     import pandas as pd
 
     def drop_zero_standard_deviation_columns(self, dataframe:pd.DataFrame)->pd.DataFrame:
-        """
-        Drops columns from a Pandas DataFrame that have zero standard deviation.
-        
-        Parameters:
-        dataframe (pandas.DataFrame): the input DataFrame to process.
-        
-        Returns:
-        pandas.DataFrame: the modified DataFrame with zero standard deviation columns dropped.
-        """
-        self.std = dataframe.std()
-        self.zero_std_cols = self.std[self.std == 0].index.tolist() 
+        self.std = dataframe.std(numeric_only=True)
+        self.zero_std_cols = self.std[self.std.eq(0)].index.tolist() 
         self.dataframe = dataframe.drop(self.zero_std_cols, axis=1)
         return self.dataframe
+        
 
     def validate_nums_of_colunms(self, dataframe:pd.DataFrame)->bool:
         """
@@ -46,11 +38,11 @@ class DataValidation:
         try:
             num_of_dataframe_columns = len(dataframe.columns)
             num_of_schema_config_columns = len(self._schema_config["columns"])
-            status = num_of_dataframe_columns == num_of_schema_config_columns
-            logging.info(f"Is required column present: [{status}]")
+            #status = num_of_dataframe_columns == num_of_schema_config_columns
+
             logging.info(f"Required dataframe column present: [{num_of_dataframe_columns}]")
             logging.info(f"Required schema_config column present: [{num_of_schema_config_columns}]")
-            if status:
+            if num_of_dataframe_columns == num_of_schema_config_columns:
                 return True
             return False
             #logging.info(f"Is required column present: [{num_of_columns}]")
@@ -58,9 +50,9 @@ class DataValidation:
         except Exception as e:
             raise SensorException(e, sys)
 
-    def is_numerical_colunm_exist(self, df: pd.DataFrame)->bool:
+    def is_numerical_colunm_exist(self, dataframe: pd.DataFrame)->bool:
         try:
-            dataframe_columns = df.columns
+            dataframe_columns = dataframe.columns
             numerical_column_present = True
             numerical_columns = self._schema_config["numerical_columns"]
             missing_numerical_columns = []
@@ -75,7 +67,7 @@ class DataValidation:
             return numerical_column_present
 
         except Exception as e:
-            raise SensorException(e, sys) from e
+            raise SensorException(e, sys)
 
     @staticmethod
     def read_data(file_path)->pd.DataFrame:
@@ -106,7 +98,7 @@ class DataValidation:
                 #create a directory
                 dir_path = os.path.dirname(drift_report_file_path)
                 os.makedirs(dir_path, exist_ok=True)
-                write_yaml_file(file_path=drift_report_file_path, content=report)
+                write_yaml_file(file_path=drift_report_file_path, content=report,)
             return validation_status
         except Exception as e:
             raise SensorException(e, sys)
@@ -130,54 +122,68 @@ class DataValidation:
                 f"All required columns present in training dataframe: {status}"
             )
             if not status:
-                error_message = f"{error_message} Train dataframe does not contain all columns. "
+                error_message = f"{error_message} Train dataframe does not contain all columns.\n"
 
             status = self.validate_nums_of_colunms(dataframe=test_dataframe)
             logging.info(
                 f"All required columns present in testing dataframe: {status}"
             )
             if not status:
-                error_message = f"{error_message} Test dataframe does not contain all columns. "
+                error_message = f"{error_message} Test dataframe does not contain all columns.\n"
+
 
             #Validate numerical columns
 
-            status = self.is_numerical_colunm_exist(df=train_dataframe)
+            status = self.is_numerical_colunm_exist(dataframe=train_dataframe)
             if not status:
                 error_message=f"{error_message}Train dataframe does not contain all numerical columns"
 
-            status = self.is_numerical_colunm_exist(df=test_dataframe)
+            status = self.is_numerical_colunm_exist(dataframe=test_dataframe)
             if not status:
                 error_message=f"{error_message}Test dataframe does not contain all numerical columns"
 
-            # if len(error_message) > 0:
-            #     raise Exception(error_message)
+            if len(error_message) > 0:
+                raise Exception(error_message)
             
-            validation_status = len(error_message) == 0
+            #Drops columns from a Pandas DataFrame that have zero standard deviation.
+            train_dataframe = self.drop_zero_standard_deviation_columns(train_dataframe)
+            test_dataframe = self.drop_zero_standard_deviation_columns(test_dataframe)
 
-            if validation_status:
-                #Drops columns from a Pandas DataFrame that have zero standard deviation.
-                train_dataframe = self.drop_zero_standard_deviation_columns(train_dataframe)
-                test_dataframe = self.drop_zero_standard_deviation_columns(test_dataframe)
+            #Lets check data drift
+            drift_status = self.detect_dataset_drift(base_df=train_dataframe, current_df=test_dataframe)
 
-                #Lets check data drift
-                drift_status = self.detect_dataset_drift(base_df=train_dataframe, current_df=test_dataframe)
+            
+            # validation_status = len(error_message) == 0
 
-                if drift_status:
-                    logging.info(f"Drift detected.")
+            # if validation_status:
+            #     #Drops columns from a Pandas DataFrame that have zero standard deviation.
+            #     train_dataframe = self.drop_zero_standard_deviation_columns(train_dataframe)
+            #     test_dataframe = self.drop_zero_standard_deviation_columns(test_dataframe)
 
-            else:
-                logging.info(f"Validation_error: {error_message}")
+            #     #Lets check data drift
+            #     drift_status = self.detect_dataset_drift(base_df=train_dataframe, current_df=test_dataframe)
+
+            #     if drift_status:
+            #         logging.info(f"Drift detected.")
+
+            # else:
+            #     logging.info(f"Validation_error: {error_message}")
             
 
             data_validation_artifact = DataValidationArtifact(
                 validation_status=drift_status,
                 valid_train_file_path=self.data_ingestion_artifact.trained_file_path,
                 valid_test_file_path=self.data_ingestion_artifact.test_file_path,
-                invalid_train_file_path=self.data_validation_config.invalid_train_file_path,
-                invalid_test_file_path=self.data_validation_config.invalid_test_file_path,
+                invalid_train_file_path=None,
+                invalid_test_file_path=None,
+                # invalid_train_file_path=self.data_validation_config.invalid_train_file_path,
+                # invalid_test_file_path=self.data_validation_config.invalid_test_file_path,
                 drift_report_file_path=self.data_validation_config.drift_report_file_path,
             )
 
+            logging.info(f"Data validation artifact: {data_validation_artifact}")
+
+            return data_validation_artifact
 
 
         except Exception as e:

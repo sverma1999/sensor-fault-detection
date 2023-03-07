@@ -5,6 +5,7 @@ __pycache__/
 *$py.class
 artifact
 .vscode
+*.DS_Store
 
 # C extensions
 *.so

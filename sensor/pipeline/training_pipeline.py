@@ -66,6 +66,7 @@ class TrainingPipeline:
             )
             data_validation_artifact = data_validation.initiate_data_validation()
             logging.info(f"Data validation completed and artifact: {data_validation_artifact}")
+            return data_validation_artifact
         except Exception as e:
             raise SensorException(e, sys)
     

@@ -31,7 +31,7 @@ if __name__ == '__main__':
         training_pipeline.run_pipeline()
     except Exception as e:
         logging.exception(e)
-        print(e)
+        # print(e)
 
     
 
