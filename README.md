@@ -32,7 +32,12 @@ Before we run the project, make sure that you are having MongoDB in your local s
 
 ## Data Collections
 
+Usually, it is the job of data engineers to collect the data and make it available for the data scientists. But, in this project, I have collected the data myself. The data is collected from the [Confluent Cloud](https://www.confluent.io/confluent-cloud/).
+
 ![image](https://user-images.githubusercontent.com/57321948/193536736-5ccff349-d1fb-486e-b920-02ad7974d089.png)
+
+Confleunt kafka is used for data streaming.
+Kafka has producer and consumer.
 
 ## Project Archietecture
 
@@ -102,14 +107,18 @@ http://localhost:8080/predict
 - **sensor:** All the code related to the sensor project goes here.
   - **cloud_storage:** Code to manage files across cloud goes here.
   - **components:** For creating machine learning components.
+    - **data_ingestion.py:** Code to ingest data from MongoDB and S3.
+    - **data_validation.py:** Code to validate the data.
   - **configuration:** To maintain the connections related configurations such s3 bucket connection, MongoDB connection.
   - **constant:** Things like files, folders, model names etc... will stay constant.
   - **data_access:** The code to get data from MongoDB goes here.
   - **entity:** Defines Structure for input and output of every machine learning component.
+  - **exception:** To handle any abnormal errors.
+  - **logger:** To keep record of what is happening inside the code.
   - **ml:** Any custom model, accuracy, graph, feature engineering etc... goes here.
   - **pipeline:** Training and Prediction pipelines goes here.
-    - **exception.py:** To handle any abnormal errors.
-    - **logger.py:** To keep record of what is happening inside the code.
+    - **prediction_pipeline.py:** Prediction pipeline goes here.
+    - **training_pipeline.py:** Training pipeline goes here.
 - **venv(folder unavailable on Git):** Virtual environment for this project with Python==3.8.
 - **requirements.txt:** This file lists all the required Python packages and their versions, making it easier to reproduce the project's environment and dependencies.
 - **setup.py:** This file is used to define the project's metadata and dependencies, making it easier to distribute and install the project as a Python package.

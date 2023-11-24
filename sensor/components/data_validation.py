@@ -76,6 +76,11 @@ class DataValidation:
         except Exception as e:
             raise SensorException(e, sys)
 
+    # Note: data drift detection is not possible on single record. It needs multiple records.
+    # if data drift detected during training pipeline then we can try changing train test split ratio.
+    # if data drift detected during prediction pippeline then we can keep on collecting and saving
+    # mulitple records in database throughout hour or day and then detect datadrift between train and collected data.
+    # If drift detected differenc eis huge then, we can try to retrain the model.
     def detect_dataset_drift(self, base_df, current_df, threshold=0.05)->bool:
         try:
             report = {}
@@ -103,7 +108,7 @@ class DataValidation:
         except Exception as e:
             raise SensorException(e, sys)
             
-
+    # Why DataIngestionArtifact ? it should be DataValidationArtifact
     def initiate_data_validation(self)->DataIngestionArtifact:
         try:
             error_message = ""
