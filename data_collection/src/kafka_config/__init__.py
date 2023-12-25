@@ -1,4 +1,8 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
+
 
 # Authentication related variables ---------------------------------------------
 # Define the security protocol for Kafka to ensure a secure connection between the client and server machines.
@@ -26,27 +30,16 @@ SCHEMA_REGISTRY_API_KEY = os.getenv("SCHEMA_REGISTRY_API_KEY", None)
 SCHEMA_REGISTRY_API_SECRET = os.getenv("SCHEMA_REGISTRY_API_SECRET", None)
 # Retrieve the schema URL from the environment variables.
 # The schema URL is used to validate the data format within the Kafka ecosystem.
-ENDPOINT_SCHEMA_URL = os.getenv("ENDPOINT_SCHEMA_URL", None)
+# ENDPOINT_SCHEMA_URL = os.getenv("ENDPOINT_SCHEMA_URL", None)
+# ENDPOINT_SCHEMA_URL = os.environ.get("ENDPOINT_SCHEMA_URL", None)
+ENDPOINT_SCHEMA_URL = os.environ["ENDPOINT_SCHEMA_URL"]
 
 
-# API_KEY = 'ES3RCTGXMG4EWMHV'
-# ENDPOINT_SCHEMA_URL  = 'https://psrc-em82q.us-east-2.aws.confluent.cloud'
-# API_SECRET_KEY = 'Cu6TxnHheRQrM1xuSatwY6tECOqne+gMAptkFa1u3NeRRFNnaWlNKQHqHCmhKO7U'
-# BOOTSTRAP_SERVER = 'pkc-lzvrd.us-west4.gcp.confluent.cloud:9092'
-# API_KEY = os.environ('API_KEY',None)
-# ENDPOINT_SCHEMA_URL  = os.environ('ENDPOINT_SCHEMA_URL',None)
-# API_SECRET_KEY = os.environ('API_SECRET_KEY',None)
-# BOOTSTRAP_SERVER = os.environ('BOOTSTRAP_SERVER',None)
-
-# # SECURITY_PROTOCOL = os.getenv('SECURITY_PROTOCOL',None)
-# SSL_MACHENISM = os.getenv('SSL_MACHENISM',None)
-# SCHEMA_REGISTRY_API_KEY = 'RYKWGSZEG2ASOS4C'
-# SCHEMA_REGISTRY_API_SECRET = 'r3HsabV0dB094ThMFslCcZtTQ2eHLcR+Ja5ZMSSJORReem86zZqgeOav+cV2cACL'
-# SCHEMA_REGISTRY_API_KEY = os.environ('SCHEMA_REGISTRY_API_KEY',None)
-# SCHEMA_REGISTRY_API_SECRET = os.environ('SCHEMA_REGISTRY_API_SECRET',None)
-
-
+# This function will return dictionary of sasl configuration
 def sasl_conf():
+    """
+    This function will return dictionary of sasl configuration
+    """
     sasl_conf = {
         "sasl.mechanism": SSL_MACHENISM,
         # Set to SASL_SSL to enable TLS support.
@@ -56,11 +49,14 @@ def sasl_conf():
         "sasl.username": API_KEY,
         "sasl.password": API_SECRET_KEY,
     }
-    print(sasl_conf)
+    # print(sasl_conf)
     return sasl_conf
 
 
 def schema_config():
+    """
+    This function will return dictionary of schema registry configuration
+    """
     return {
         "url": ENDPOINT_SCHEMA_URL,
         "basic.auth.user.info": f"{SCHEMA_REGISTRY_API_KEY}:{SCHEMA_REGISTRY_API_SECRET}",

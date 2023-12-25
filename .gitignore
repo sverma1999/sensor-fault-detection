@@ -5,6 +5,7 @@ __pycache__/
 *$py.class
 artifact
 .vscode
+.DS_Store
 
 # C extensions
 *.so
@@ -113,8 +114,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-sfDetectionVenv/
-sfDetectionVenv.bak/
+kafkaVenv/
+kafkaVenv.bak/
+sfdVenv/
+sfdVenv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -133,3 +136,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# others
+credentials/
+Dockerfile
+sfd_project/sfDetectionVenv/

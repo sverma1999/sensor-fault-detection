@@ -5,4 +5,5 @@ pandas
 pymongo[srv]==4.1.1
 jsonschema==3.2.0
 dnspython
+python-dotenv
 -e .
