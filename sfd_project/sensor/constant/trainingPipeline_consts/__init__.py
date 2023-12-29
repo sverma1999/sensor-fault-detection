@@ -1,12 +1,10 @@
 import os
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
-
+# defining common constant variable for training pipeline
 TARGET_COLUMN = "class"
 PIPELINE_NAME: str = "sensor"
 ARTIFACT_DIR: str = "artifact"
-
-# common file name
 
 FILE_NAME: str = "sensor.csv"
 TRAIN_FILE_NAME: str = "train.csv"

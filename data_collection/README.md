@@ -74,8 +74,12 @@ Add connection string to `.env` file:
 MONGO_DB_URL=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
 ```
 
-Make sure `mongodv.py` file is using the same database name and collection name. My database name was `sensor_readings` and collection name was `sensor`.
+Make sure `mongodb.py` file is using the same database name and collection name. My database name was `sensor_readings` and collection name was `sensor`.
 My `json_consumer.py` file is using the same collection name.
+
+## Data Collection
+
+![image](docs/data_collection.png)
 
 ## Dataset
 
