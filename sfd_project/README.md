@@ -131,6 +131,8 @@ http://localhost:8080/predict
     - **config_entity:** Describes the input configuration of the training components like data ingestion, data preprocessing etc...
   - **ml:** Any custom model, accuracy, loss, graph, feature engineering etc... goes here.
   - **pipeline:** Training and Prediction pipelines goes here.
+  - **utils:** Folder to keep all the utility functions.
+    - **main_utils.py:** Any simple functions that are used in multiple places goes here.
     - **exception.py:** To handle any abnormal errors.
     - **logger.py:** To keep record of what is happening inside the code.
 - **venv(folder unavailable on Git):** Virtual environment for this project with Python==3.8.
