@@ -3,9 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 *$py.class
-artifact
 .vscode
+*.DS_Store
 .DS_Store
+*bkp
+*.bak
+*.dtmp
 
 # C extensions
 *.so
@@ -14,7 +17,7 @@ artifact
 .Python
 build/
 develop-eggs/
-dist/
+dist/artifact
 downloads/
 eggs/
 .eggs/
@@ -31,6 +34,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 saved_models/*
+sensor.egg-info/*
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -142,3 +147,5 @@ dmypy.json
 credentials/
 Dockerfile
 sfd_project/sfDetectionVenv/
+artifact
+artifact_old

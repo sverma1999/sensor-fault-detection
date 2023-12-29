@@ -1,0 +1,160 @@
+<mxfile host="Electron" modified="2023-12-29T01:57:46.939Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="MgSUxaGuteje2HYn2H9N" version="21.2.1" type="device">
+  <diagram name="Page-1" id="1WackYAGCFnm29lH8nRu">
+    <mxGraphModel dx="1187" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LV2ppV1G3uVXToiorY5S-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-1" target="LV2ppV1G3uVXToiorY5S-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-1" value="Data Ingestion Config" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="210" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-2" target="LV2ppV1G3uVXToiorY5S-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="610" />
+              <mxPoint x="787" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-2" target="LV2ppV1G3uVXToiorY5S-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="630" />
+              <mxPoint x="787" y="715" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-2" value="Data Ingestion Artifact" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="600" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-4" value="" style="swimlane;startSize=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="360" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="LV2ppV1G3uVXToiorY5S-4" source="LV2ppV1G3uVXToiorY5S-3" target="LV2ppV1G3uVXToiorY5S-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-3" value="Initiate Data Ingestion" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LV2ppV1G3uVXToiorY5S-4">
+          <mxGeometry x="100" y="40" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="LV2ppV1G3uVXToiorY5S-4" source="LV2ppV1G3uVXToiorY5S-5" target="LV2ppV1G3uVXToiorY5S-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-5" value="Export Data to Feature Store" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LV2ppV1G3uVXToiorY5S-4">
+          <mxGeometry x="100" y="142.5" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-6" value="Split Data as Train and Test" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LV2ppV1G3uVXToiorY5S-4">
+          <mxGeometry x="100" y="377.5" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="LV2ppV1G3uVXToiorY5S-4" source="LV2ppV1G3uVXToiorY5S-7" target="LV2ppV1G3uVXToiorY5S-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-7" value="Drop Columns" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LV2ppV1G3uVXToiorY5S-4">
+          <mxGeometry x="100" y="257.5" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-14" value="Data Ingestion Component" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;fillColor=none;dashed=1;" vertex="1" parent="LV2ppV1G3uVXToiorY5S-4">
+          <mxGeometry width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-6" target="LV2ppV1G3uVXToiorY5S-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-15" target="LV2ppV1G3uVXToiorY5S-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-15" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.file" vertex="1" parent="1">
+          <mxGeometry x="66.5" y="532.5" width="47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-16" value="config/schema.yaml" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="580" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-19" target="LV2ppV1G3uVXToiorY5S-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="433" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-19" value="MongoDB" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="385" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.51;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-20" target="LV2ppV1G3uVXToiorY5S-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-20" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" vertex="1" parent="1">
+          <mxGeometry x="599.4" y="300" width="41.2" height="86.2" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-22" value="Database Name - sensor_readings&lt;br&gt;Collection Name - sensor" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="700" y="323.1" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-24" target="LV2ppV1G3uVXToiorY5S-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-24" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/folder.svg;" vertex="1" parent="1">
+          <mxGeometry x="873.5" y="520" width="36.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-25" target="LV2ppV1G3uVXToiorY5S-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1090" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="715" />
+              <mxPoint x="1040" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-25" target="LV2ppV1G3uVXToiorY5S-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1060" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1040" y="715" />
+              <mxPoint x="1040" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-25" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/folder.svg;" vertex="1" parent="1">
+          <mxGeometry x="873.5" y="690" width="36.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-28" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="523.5" width="59" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-29" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="640" width="59" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-30" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="750" width="59" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-34" value="sensor.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1089" y="502.5" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-35" value="test.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1094" y="620" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-36" value="train.csv" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1089" y="730" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-37" value="artifact/{timestamp}/data_ingestion/feature_store" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="790" y="558" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-38" value="artifact/{timestamp}/data_ingestion/ingested" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="730" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-40" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Data Ingestion Dir&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Feature Store File Path&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Training File Path&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Testing File Path&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Train Test Split Ratio&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Collection Name&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="500" y="140" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-41" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=classicThin;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;horizontal=0;startFill=1;endFill=0;" edge="1" target="LV2ppV1G3uVXToiorY5S-40" parent="1" source="LV2ppV1G3uVXToiorY5S-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LV2ppV1G3uVXToiorY5S-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LV2ppV1G3uVXToiorY5S-5" target="LV2ppV1G3uVXToiorY5S-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
