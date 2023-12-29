@@ -44,3 +44,38 @@ class DataIngestionConfig:
     train_test_split_ratio: float = DATA_INGESTION_TRAIN_TEST_SPLIT_RATION
 
     collection_name: str = DATA_INGESTION_COLLECTION_NAME
+
+
+@dataclass
+class DataValidationConfig:
+    # path to save validated data files
+    data_validation_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, DATA_VALIDATION_DIR_NAME
+    )
+
+    # path to save valid data files
+    valid_data_dir: str = os.path.join(data_validation_dir, DATA_VALIDATION_VALID_DIR)
+
+    # path to save invalid data files
+    invalid_data_dir: str = os.path.join(
+        data_validation_dir, DATA_VALIDATION_INVALID_DIR
+    )
+
+    # path to valid train data file
+    valid_train_file_path: str = os.path.join(valid_data_dir, TRAIN_FILE_NAME)
+
+    # path to valid test data file
+    valid_test_file_path: str = os.path.join(valid_data_dir, TEST_FILE_NAME)
+
+    # path to invalid train data file
+    invalid_train_file_path: str = os.path.join(invalid_data_dir, TRAIN_FILE_NAME)
+
+    # path to invalid test data file
+    invalid_test_file_path: str = os.path.join(invalid_data_dir, TEST_FILE_NAME)
+
+    # path to save drift report
+    drift_report_file_path: str = os.path.join(
+        data_validation_dir,
+        DATA_VALIDATION_DRIFT_REPORT_DIR,
+        DATA_VALIDATION_DRIFT_REPORT_FILE_NAME,
+    )
