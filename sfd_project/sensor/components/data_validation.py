@@ -18,6 +18,10 @@ class DataValidation:
         data_validation_config: DataValidationConfig,
         data_ingestion_artifact: DataIngestionArtifact,
     ):
+        """
+        :param data_validation_config: configuration for data validation
+        :param data_ingestion_artifact: Output reference of data ingestion artifact stage
+        """
         try:
             self.data_validation_config = data_validation_config
             self.data_ingestion_artifact = data_ingestion_artifact
@@ -62,7 +66,19 @@ class DataValidation:
 
     # OPTIONAL: Add a method to check if the standard deviation of the numerical columns is zero or not. If it is zero, then it means
     # that the column has only one value and hence it is not useful for training the model. So, we can drop that column.
-    # def drop_zero_std_cols(self, dataframe: pd.DataFrame) -> bool:
+    # Currently not using it!
+    def drop_zero_standard_deviation_columns(
+        self, dataframe: pd.DataFrame
+    ) -> pd.DataFrame:
+        # getting the standard deviation of numerical columns
+        self.std = dataframe.std(numeric_only=True)
+
+        # getting the columns with standard deviation equal to zero
+        self.zero_std_cols = self.std[self.std.eq(0)].index.tolist()
+
+        # dropping the columns with standard deviation equal to zero
+        self.dataframe = dataframe.drop(self.zero_std_cols, axis=1)
+        return self.dataframe
 
     @staticmethod
     def read_data(file_path) -> pd.DataFrame:
@@ -158,6 +174,10 @@ class DataValidation:
 
             if len(error_message) > 0:
                 raise Exception(error_message)
+
+            # Drops columns from a Pandas DataFrame that have zero standard deviation.
+            # train_dataframe = self.drop_zero_standard_deviation_columns(train_dataframe)
+            # test_dataframe = self.drop_zero_standard_deviation_columns(test_dataframe)
 
             # Lest check the data drift
             # Not raising exception if drift is detected, becuase we want to continue the pipeline even if drift is detected,
