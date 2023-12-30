@@ -3,8 +3,10 @@ from sensor.logger_code.logger import logging
 from sensor.entity.config_entity import DataIngestionConfig
 from sensor.entity.artifact_entity import DataIngestionArtifact
 from sensor.data_access.sensor_data import SensorData
+from sensor.constant.trainingPipeline_consts import *
 
 from sklearn.model_selection import train_test_split
+from sensor.utils.main_utils import read_yaml_file, write_yaml_file
 from pandas import DataFrame
 import sys, os
 
@@ -78,6 +80,11 @@ class DataIngestion:
         try:
             # exporting data from mongodb to the feature store file (sensor.csv) and return the dataframe
             dataframe = self.export_data_into_feature_store()
+
+            _schema_config = read_yaml_file(SCHEMA_FILE_PATH)
+
+            # schema has some columns which are not required for training the model, so we will drop those columns
+            dataframe = dataframe.drop(_schema_config[SCHEMA_DROP_COLS], axis=1)
 
             # split the feature store file (sensor.csv) into train and test file
             self.data_train_test_split(dataframe=dataframe)
