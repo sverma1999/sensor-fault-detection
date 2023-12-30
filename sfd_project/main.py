@@ -26,11 +26,12 @@ def test_fun():
 
 if __name__ == "__main__":
     # ------------------------------------------- Training pipeline starts here -------------------------------------------
-
+    # try:
     training_pipeline = TrainingPipeline()
 
     training_pipeline.run_pipeline()
-
+    # except Exception as e:
+    #     logging.exception(e)
     # ------------------------------------------- Rough -------------------------------------------
 
     # mongodb_client = MongoDBClient()

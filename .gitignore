@@ -6,7 +6,10 @@ __pycache__/
 .vscode
 *.DS_Store
 .DS_Store
-*bkp
+.bkp
+.bak
+.dtmp
+*.bkp
 *.bak
 *.dtmp
 
