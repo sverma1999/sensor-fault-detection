@@ -2,7 +2,7 @@ import sys
 
 from sensor.entity.config_entity import (
     DataIngestionConfig,
-    # DataTransformationConfig,
+    DataTransformationConfig,
     DataValidationConfig,
     # ModelEvaluationConfig,
     # ModelPusherConfig,
@@ -11,10 +11,11 @@ from sensor.entity.config_entity import (
 
 from sensor.components.data_ingestion import DataIngestion
 from sensor.components.data_validation import DataValidation
+from sensor.components.data_transformation import DataTransformation
 
 from sensor.entity.artifact_entity import (
     DataIngestionArtifact,
-    # DataTransformationArtifact,
+    DataTransformationArtifact,
     DataValidationArtifact,
     # ModelEvaluationArtifact,
     # ModelTrainerArtifact,
@@ -31,7 +32,7 @@ class TrainingPipeline:
 
         self.data_validation_config = DataValidationConfig()
 
-        # self.data_transformation_config = DataTransformationConfig()
+        self.data_transformation_config = DataTransformationConfig()
 
         # self.model_trainer_config = ModelTrainerConfig()
 
@@ -50,7 +51,7 @@ class TrainingPipeline:
             #     training_pipeline_config=self.training_pipeline_config
             # )
 
-            # Component 1: DataIngestion
+            # Component 1: DataIngestion, passing the input config
             data_ingestion = DataIngestion(
                 data_ingestion_config=self.data_ingestion_config
             )
@@ -70,7 +71,7 @@ class TrainingPipeline:
     ) -> DataValidationArtifact:
         logging.info("Entered the start_data_validation method of TrainPipeline class")
         try:
-            # Component 2: DataValidation
+            # Component 2: DataValidation, passing the input config
             data_validation = DataValidation(
                 data_ingestion_artifact=data_ingestion_artifact,
                 data_validation_config=self.data_validation_config,
@@ -85,11 +86,27 @@ class TrainingPipeline:
         except Exception as e:
             raise SensorException(e, sys)
 
-    # def start_data_transformation(self):
-    #     try:
-    #         pass
-    #     except Exception as e:
-    #         raise SensorException(e, sys)
+    def start_data_transformation(
+        self, data_validation_artifact: DataValidationArtifact
+    ):
+        logging.info(
+            "Entered the start_data_transformation method of TrainPipeline class"
+        )
+        try:
+            # Component 3: DataTransformation, passing the input config
+            data_transformation = DataTransformation(
+                data_validation_artifact, self.data_transformation_config
+            )
+
+            # output of the DataTransformation component
+            data_transformation_artifact = (
+                data_transformation.initiate_data_transformation()
+            )
+
+            logging.info("Performed the data transformation operation")
+            return data_transformation_artifact
+        except Exception as e:
+            raise SensorException(e, sys)
 
     # def start_model_trainer(self):
     #     try:
@@ -118,9 +135,16 @@ class TrainingPipeline:
             logging.info("Training pipeline started")
             data_ingestion_artifact = self.start_data_ingestion()
 
+            # Artifact of the DataValidation component, reciving the DataIngestionArtifact as input
             data_validation_artifact = self.start_data_validation(
                 data_ingestion_artifact=data_ingestion_artifact
             )
+
+            # Artifact of the DataTransformation component, reciving the DataValidationArtifact as input
+            data_transformation_artifact = self.start_data_transformation(
+                data_validation_artifact=data_validation_artifact
+            )
+
             logging.info("Training pipeline completed")
         except Exception as e:
             raise SensorException(e, sys)
