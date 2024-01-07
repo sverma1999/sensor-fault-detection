@@ -5,6 +5,7 @@ from sklearn.pipeline import Pipeline
 
 from sensor.exception_code.exception import SensorException
 from sensor.logger_code.logger import logging
+from sensor.constant.trainingPipeline_consts import *
 
 
 # custom class to map the target value to 0 and 1, doing for learning purpose.
@@ -24,3 +25,95 @@ class TargetValueMapping:
         mapping_response = self.to_dict()
 
         return dict(zip(mapping_response.values(), mapping_response.keys()))
+
+
+class SensorModel:
+    def __init__(self, preprocessing_object, trained_model_object):
+        self.preprocessing_object = preprocessing_object
+        self.trained_model_object = trained_model_object
+
+    # predicting the target value using the trained model
+    def predict(self, test_data_frame: DataFrame) -> DataFrame:
+        logging.info("Entered inside predict method of SensorModel class")
+        try:
+            logging.info("Using the trained model to get predictions")
+
+            # test data needs to be transformed using the same preprocessing object used for training
+            transformed_feature = self.preprocessing_object.transform(test_data_frame)
+
+            logging.info("Used the trained model to get predictions")
+
+            return self.trained_model_object.predict(transformed_feature)
+
+        except Exception as e:
+            raise SensorException(e, sys) from e
+
+    # __repr__  and __str__ are being overridden to print the model name
+    def __repr__(self):
+        return f"{type(self.trained_model_object).__name__}()"
+
+    def __str__(self):
+        return f"{type(self.trained_model_object).__name__}()"
+
+
+class ModelResolver:
+    def __init__(self, model_dir=SAVED_MODEL_DIR):
+        try:
+            self.model_dir = model_dir
+        except Exception as e:
+            raise SensorException(e, sys)
+
+    # get the best model from the model directory: most recently saved model according to time stamp.
+    def get_best_model_path(
+        self,
+    ) -> str:
+        logging.info("Entered get_best_model_path method of ModelResolver class")
+        try:
+            # get the list of time stamps of the saved models
+            # time_stamps = list(map(int, os.listdir(self.model_dir)))
+
+            # logging.info(f"Max of time_stamps: {max(os.listdir(self.model_dir))}")
+
+            # logging.info(f"time_stamps: {time_stamps}")
+
+            # get the latest time stamp
+            # latest_timeStamp = max(time_stamps)
+
+            latest_timeStamp = max(os.listdir(self.model_dir))
+
+            logging.info(f"latest_timeStamp: {latest_timeStamp}")
+
+            # get the path of the latest model
+            latest_model_path = os.path.join(
+                self.model_dir, str(latest_timeStamp), MODEL_FILE_NAME
+            )
+
+            logging.info(f"latest_model_path: {latest_model_path}")
+
+            return latest_model_path
+        except Exception as e:
+            raise SensorException(e, sys)
+
+    def does_model_exist(self) -> bool:
+        logging.info("Entered does_model_exist method of ModelResolver class")
+        try:
+            # check if the model directory exists
+            if not os.path.exists(self.model_dir):
+                logging.info("Model directory does not exist")
+                return False
+            # check if the model directory is empty
+            time_stamps = os.listdir(self.model_dir)
+            if len(time_stamps) == 0:
+                logging.info("Model directory is empty")
+                return False
+            latest_model_path = self.get_best_model_path()
+            # logging.info(
+            #     f"os.path.exists(latest_model_path): {os.path.exists(latest_model_path)}"
+            # )
+            if not os.path.exists(latest_model_path):
+                logging.info("Latest Model path does not exist")
+                return False
+            # if none of the of the above conditions are true, then return True
+            return True
+        except Exception as e:
+            raise SensorException(e, sys)

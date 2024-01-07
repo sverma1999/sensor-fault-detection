@@ -150,5 +150,7 @@ dmypy.json
 credentials/
 Dockerfile
 sfd_project/sfDetectionVenv/
-artifact
-artifact_old
+artifact/
+artifact_old/
+logs/
+saved_model/

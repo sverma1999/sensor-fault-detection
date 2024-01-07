@@ -106,3 +106,53 @@ class DataTransformationConfig:
         DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR,
         PREPROCSSING_OBJECT_FILE_NAME,
     )
+
+
+@dataclass
+class ModelTrainerConfig:
+    # path to the model trainer directory
+    model_trainer_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, MODEL_TRAINER_DIR_NAME
+    )
+
+    # path to the trained model file
+    trained_model_file_path: str = os.path.join(
+        model_trainer_dir, MODEL_TRAINER_TRAINED_MODEL_DIR, MODEL_FILE_NAME
+    )
+
+    # Accuracy expected from the model
+    expected_accuracy: float = MODEL_TRAINER_EXPECTED_SCORE
+
+    # path to the model config file
+    model_config_file_path: str = MODEL_TRAINER_MODEL_CONFIG_FILE_PATH
+
+    overfitting_underfitting_threshold: float = (
+        MODEL_TRAINER_OVERFITTING_UNDERFITTING_THRESHOLD
+    )
+
+
+@dataclass
+class ModelEvaluationConfig:
+    # path to the model evaluation directory
+    model_evaluation_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, MODEL_EVALUATION_DIR_NAME
+    )
+
+    # path to the model evaluation report file, inside the model evaluation directory
+    report_file_path: str = os.path.join(
+        model_evaluation_dir, DATA_EVALUATION_REPORT_NAME
+    )
+
+    change_threshhold = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+
+
+@dataclass
+class ModelPusherConfig:
+    model_evaluation_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, MODEL_PUSHER_DIR_NAME
+    )
+    model_file_path = os.path.join(model_evaluation_dir, MODEL_FILE_NAME)
+
+    saved_model_path = os.path.join(
+        SAVED_MODEL_DIR, training_pipeline_config.timestamp, MODEL_FILE_NAME
+    )
