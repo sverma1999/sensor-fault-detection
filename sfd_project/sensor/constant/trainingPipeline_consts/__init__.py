@@ -7,6 +7,7 @@ TARGET_COLUMN = "class"
 PIPELINE_NAME: str = "sensor"
 ARTIFACT_DIR: str = "artifact"
 
+# Common file name
 FILE_NAME: str = "sensor.csv"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
@@ -66,6 +67,6 @@ MODEL Pusher related constant start with MODEL_PUSHER var name
 MODEL_PUSHER_DIR_NAME = "model_pusher"
 MODEL_PUSHER_SAVED_MODEL_DIR = SAVED_MODEL_DIR
 
-# MODEL_PUSHER_BUCKET_NAME = TRAINING_BUCKET_NAME
+MODEL_PUSHER_BUCKET_NAME = TRAINING_BUCKET_NAME
 
-# MODEL_PUSHER_S3_KEY = "model-registry"
+MODEL_PUSHER_S3_KEY = "model-registry"

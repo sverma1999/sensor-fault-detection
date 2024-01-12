@@ -5,7 +5,7 @@ from typing import List
 
 # Declaring variables for setup functions
 COLLECTION_NAME = "sensor"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Shubham Verma"
 EMAIL = "vshubhamkam05@gmail.com"
 

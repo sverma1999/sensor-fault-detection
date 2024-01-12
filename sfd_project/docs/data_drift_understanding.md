@@ -11,6 +11,14 @@ Data drift is the change in the feature distribution between training and servin
 - If different distribution: Data drift
   - Solution: Do the train-test split correctly
 
+We can use different methods to detect data drift:
+I have tried the following packages to detect data drift:
+
+- ks_2samp (Not being used)
+- evidently (being used)
+  - Profile: Profile is a fundamental class in Evidently that represents a profile for analyzing data drift or model performance. It serves as a container for various sections or tabs of analysis, each focusing on a specific aspect of your data or model.
+  - DataDriftProfileSection: DataDriftProfileSection is a specific section or tab within a Profile object that is used for analyzing and visualizing data drift between two datasets.
+
 ## Data drift during prediction pipeline
 
 ### Instance prediction

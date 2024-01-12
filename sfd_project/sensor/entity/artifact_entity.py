@@ -1,3 +1,6 @@
+# dataclass is a decorator which is used to create a class with some special features.
+# it is used to create a class with attributes, constructor, and methods.
+# no need to use __init__ method or self keyword.
 from dataclasses import dataclass
 
 
@@ -45,6 +48,10 @@ class ClassificationMetricArtifact:
 class ModelTrainerArtifact:
     trained_model_file_path: str
 
+    # # For method 2
+    # metric_artifact: ClassificationMetricArtifact
+
+    # For method 1
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
 
@@ -60,13 +67,21 @@ class ModelTrainerArtifact:
 @dataclass
 class ModelEvaluationArtifact:
     is_model_accepted: bool
-    improved_accuracy: float
+    changed_accuracy: float
     best_model_path: str
     best_model_metric_artifact: ClassificationMetricArtifact
     trained_model_path: str
-    train_model_metric_artifact: ClassificationMetricArtifact
+    # train_model_metric_artifact: ClassificationMetricArtifact
 
 
+# # For cloud purpose
+# @dataclass
+# class ModelPusherArtifact:
+#     bucket_name: str
+#     s3_model_path: str
+
+
+# For local purpose
 @dataclass
 class ModelPusherArtifact:
     saved_model_path: str

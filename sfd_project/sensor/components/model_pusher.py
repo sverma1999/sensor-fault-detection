@@ -8,25 +8,71 @@ from sensor.entity.artifact_entity import (
 from sensor.entity.config_entity import ModelPusherConfig
 from sensor.exception_code.exception import SensorException
 from sensor.logger_code.logger import logging
+from sensor.ml.model.s3_estimator import SensorEstimator
 import shutil
 
 
 class ModelPusher:
+    # For local testing purpose
     def __init__(
         self,
+        model_trainer_artifact: ModelTrainerArtifact,
         model_pusher_config: ModelPusherConfig,
-        model_eval_artifact: ModelEvaluationArtifact,
     ):
-        try:
-            self.model_pusher_config = model_pusher_config
-            self.model_eval_artifact = model_eval_artifact
-        except Exception as e:
-            raise SensorException(e, sys)
+        self.model_trainer_artifact = model_trainer_artifact
 
-    def initiate_model_pusher(self) -> ModelPusherArtifact:
+        self.model_pusher_config = model_pusher_config
+
+    # # For cloud purpose
+    # def __init__(
+    #     self,
+    #     model_trainer_artifact: ModelTrainerArtifact,
+    #     model_pusher_config: ModelPusherConfig,
+    # ):
+    #     self.model_trainer_artifact = model_trainer_artifact
+
+    #     self.model_pusher_config = model_pusher_config
+
+    #     self.sensor_estimator = SensorEstimator(
+    #         bucket_name=model_pusher_config.bucket_name,
+    #         model_path=model_pusher_config.s3_model_key_path,
+    #     )
+
+    # # For cloud purpose
+    # def initiate_model_pusher(self) -> ModelPusherArtifact:
+    #     logging.info("Entered initiate_model_pusher method of ModelTrainer class")
+
+    #     try:
+    #         logging.info("Uploading artifacts folder to s3 bucket")
+
+    #         # This will upload the trained model to s3 bucket
+    #         self.sensor_estimator.save_model(
+    #             from_file=self.model_trainer_artifact.trained_model_file_path
+    #         )
+
+    #         # prepare model pusher artifact
+    #         model_pusher_artifact = ModelPusherArtifact(
+    #             bucket_name=self.model_pusher_config.bucket_name,
+    #             s3_model_path=self.model_pusher_config.s3_model_key_path,
+    #         )
+
+    #         logging.info("Uploaded artifacts folder to s3 bucket")
+
+    #         logging.info(f"Model pusher artifact: [{model_pusher_artifact}]")
+
+    #         logging.info("Exited initiate_model_pusher method of ModelTrainer class")
+
+    #         return model_pusher_artifact
+
+    #     except Exception as e:
+    #         raise SensorException(e, sys) from e
+
+    # For local testing purpose
+    def initiate_model_pusher_locally(self) -> ModelPusherArtifact:
         logging.info("Entered initiate_model_pusher method of ModelPusher class")
         try:
-            trained_model_path = self.model_eval_artifact.trained_model_path
+            # trained_model_path = self.model_eval_artifact.trained_model_path
+            trained_model_path = self.model_trainer_artifact.trained_model_file_path
             # we will copy trained model to two places
 
             # this is for training pipeline purpose, so we can pull for there.

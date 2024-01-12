@@ -1,6 +1,7 @@
 import sys
 
 from pandas import DataFrame
+import numpy as np
 from sklearn.pipeline import Pipeline
 
 from sensor.exception_code.exception import SensorException
@@ -33,10 +34,17 @@ class SensorModel:
         self.trained_model_object = trained_model_object
 
     # predicting the target value using the trained model
-    def predict(self, test_data_frame: DataFrame) -> DataFrame:
+    def predict(self, test_data_frame: DataFrame) -> np.ndarray:
         logging.info("Entered inside predict method of SensorModel class")
         try:
             logging.info("Using the trained model to get predictions")
+
+            logging.info(
+                f"type of preprocessing_object: {type(self.preprocessing_object)}"
+            )
+            logging.info(
+                f"type of trained_model_object: {type(self.trained_model_object)}"
+            )
 
             # test data needs to be transformed using the same preprocessing object used for training
             transformed_feature = self.preprocessing_object.transform(test_data_frame)
@@ -54,6 +62,35 @@ class SensorModel:
 
     def __str__(self):
         return f"{type(self.trained_model_object).__name__}()"
+
+    # def is_model_present(self, model_path):
+    #     """
+    #     Method Name :   is_model_present
+    #     Description :   This method checks whether model is present in the bucket or not
+
+    #     :param model_path: Location of your model in bucket
+
+    #     :Output      :   True if model is present else False
+    #     On Failure  :   Write an exception log and then return False
+
+    #     Version     :   1.2
+    #     Revisions   :   moved setup to cloud
+    #     """
+
+    #     logging.info("Entered is_model_present method of SensorEstimator class")
+    #     try:
+    #         # checking whether model is present in the bucket or not
+    #         # true if model is present else false
+    #         return self.s3.s3_key_path_available(
+    #             bucket_name=self.bucket_name, s3_key=model_path
+    #         )
+
+    #     except SensorException as e:
+    #         print(e)
+    #         logging.info(
+    #             "Exception occured in is_model_present method of SensorEstimator class, returned False"
+    #         )
+    #         return False
 
 
 class ModelResolver:
@@ -94,8 +131,8 @@ class ModelResolver:
         except Exception as e:
             raise SensorException(e, sys)
 
-    def does_model_exist(self) -> bool:
-        logging.info("Entered does_model_exist method of ModelResolver class")
+    def is_model_present(self) -> bool:
+        logging.info("Entered is_model_present method of ModelResolver class")
         try:
             # check if the model directory exists
             if not os.path.exists(self.model_dir):

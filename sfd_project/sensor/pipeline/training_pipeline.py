@@ -27,12 +27,20 @@ from sensor.entity.artifact_entity import (
 from sensor.exception_code.exception import SensorException
 from sensor.logger_code.logger import logging
 
+from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
+
+# from sensor.constant.trainingPipeline_consts import SAVED_MODEL_DIR
+# from sensor.cloud_storage.s3_syncer import s3Sync
+
 
 class TrainingPipeline:
     is_pipeline_running = False
 
     def __init__(self):
         # data_ingestion_config to be passed to the DataIngestion component
+
+        # self.training_pipeline_config = TrainingPipelineConfig()
+
         self.data_ingestion_config = DataIngestionConfig()
 
         self.data_validation_config = DataValidationConfig()
@@ -62,7 +70,8 @@ class TrainingPipeline:
             )
 
             # output of the DataIngestion component
-            # sensor.csv file will be saved in feature store directory of the artifact
+            # sensor.csv file will be saved in feature_store directory of the artifact
+            # train.csv and test.csv files will be saved in ingested directory of the artifact
             data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
             logging.info(
                 f"Data ingestion completed and artifact: {data_ingestion_artifact}"
@@ -89,7 +98,7 @@ class TrainingPipeline:
 
             return data_validation_artifact
         except Exception as e:
-            raise SensorException(e, sys)
+            raise SensorException(e, sys) from e
 
     def start_data_transformation(
         self, data_validation_artifact: DataValidationArtifact
@@ -157,30 +166,33 @@ class TrainingPipeline:
         except Exception as e:
             raise SensorException(e, sys)
 
-    def start_model_pusher(self, model_eval_artifact: ModelEvaluationArtifact):
+    def start_model_pusher(self, model_trainer_artifact: ModelTrainerArtifact):
         logging.info("Entered the start_model_pusher method of TrainPipeline class")
 
         try:
             # Component 6: ModelPusher, passing the input config and the ModelEvaluationArtifact
             model_pusher = ModelPusher(
                 model_pusher_config=self.model_pusher_config,
-                model_eval_artifact=model_eval_artifact,
+                model_trainer_artifact=model_trainer_artifact,
             )
 
-            # output of the ModelPusher component
-            model_pusher_artifact = model_pusher.initiate_model_pusher()
+            # output of the ModelPusher component for cloud testing
+            # model_pusher_artifact = model_pusher.initiate_model_pusher()
+
+            # output of the ModelPusher component for local testing
+            model_pusher_artifact = model_pusher.initiate_model_pusher_locally()
 
             logging.info("Performed the data pusher operation")
             return model_pusher_artifact
         except Exception as e:
             raise SensorException(e, sys)
 
-    # This method will run the entire training pipeline
+    # This function will run the entire training pipeline
     def run_pipeline(
         self,
     ) -> None:
         try:
-            is_pipeline_running = True
+            TrainingPipeline.is_pipeline_running = True
             # Artifact of the DataIngestion component
             logging.info("Training pipeline started")
             data_ingestion_artifact = self.start_data_ingestion()
@@ -206,16 +218,19 @@ class TrainingPipeline:
                 model_trainer_artifact=model_trainer_artifact,
             )
 
-            # check if the trained model is accepted or not. If not accepted then raise an exception.
+            # check if the trained model is accepted or not. If not accepted then logg the message and return None
             if not model_evaluation_artifact.is_model_accepted:
-                raise Exception("Trained model is not better than the best model")
+                logging.info("Trained model is not better than the best model")
+                return None
 
             # if accepted then push the model
             model_pusher_artifact = self.start_model_pusher(
-                model_eval_artifact=model_evaluation_artifact
+                model_trainer_artifact=model_trainer_artifact
             )
-            is_pipeline_running = False
+
+            TrainingPipeline.is_pipeline_running = False
 
             logging.info("Training pipeline completed")
         except Exception as e:
+            TrainingPipeline.is_pipeline_running = False
             raise SensorException(e, sys)

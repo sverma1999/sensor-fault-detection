@@ -13,10 +13,13 @@ from sensor.logger_code.logger import logging
 from sensor.ml.metric import calculate_metric
 from sensor.ml.model.estimator import SensorModel
 from sensor.utils.main_utils import load_numpy_array_data, load_object, save_object
+
+# For method 2: Using ModelFactory from neuro_mf package==============================
 from neuro_mf import (
     ModelFactory,
 )  # Model Factory helps us to generate model training and grid search code automatically
 
+# If method 1 is used, then uncomment the below line
 from xgboost import XGBClassifier
 
 
@@ -29,7 +32,7 @@ class ModelTrainer:
         self.data_transformation_artifact = data_transformation_artifact
         self.model_trainer_config = model_trainer_config
 
-    # Other method to train model: using XGBClassifier directly if hyperparameter tuning is already done in jupyter notebook and not required to be done in the code.
+    # method 1, to train model using XGBClassifier directly if hyperparameter tuning is already done in jupyter notebook and not required to be done in the code.
     def train_model(self, x_train, y_train):
         try:
             xgb_clf = XGBClassifier()
@@ -141,7 +144,7 @@ class ModelTrainer:
             )
             logging.info("Metric artifact created.")
 
-            # End of method 1:========================================
+            # End of method 1:=================================================================================================
 
             # # Train model method 2: Using ModelFactory from neuro_mf package==============================
             # # Find the best model using grid search
@@ -205,4 +208,4 @@ class ModelTrainer:
             return model_trainer_artifact
 
         except Exception as e:
-            raise SensorException(e, sys)
+            raise SensorException(e, sys) from e
