@@ -6,4 +6,19 @@ scikit-learn==1.1.3
 PyYAML
 dill
 imblearn==0.0
+xgboost
+neuro-mf
+fastapi
+starlette
+uvicorn
+python-multipart
+evidently==0.1.58.dev0
+boto3
+botocore-stubs
+httptools
+mypy-boto3-s3
+types-s3transfer
+watchfiles
+websockets
+wincertstore
 -e .

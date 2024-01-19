@@ -46,8 +46,16 @@ class DataIngestion:
 
     def data_train_test_split(self, dataframe: DataFrame) -> None:
         """
-        Feature store dataset will be split into train and test file
+        Method Name :   data_train_test_split
+        Description :   This method splits the dataframe into train set and test set based on split ratio
+
+        Output      :   Folder is created in s3 bucket
+        On Failure  :   Write an exception log and then raise an exception
+
+        Version     :   1.2
+        Revisions   :   moved setup to cloud
         """
+        logging.info("Entered data_train_test_split method of Data_Ingestion class")
         try:
             train_set, test_set = train_test_split(
                 dataframe, test_size=self.data_ingestion_config.train_test_split_ratio
@@ -73,10 +81,21 @@ class DataIngestion:
 
             logging.info(f"Exported train and test file path.")
         except Exception as e:
-            raise SensorData(e, sys)
+            raise SensorData(e, sys) from e
 
     # Data ingestion component will be initiated from here and call rest of the methods.
     def initiate_data_ingestion(self) -> DataIngestionArtifact:
+        """
+        Method Name :   initiate_data_ingestion
+        Description :   This method initiates the data ingestion components of training pipeline
+
+        Output      :   train set and test set are returned as the artifacts of data ingestion components
+        On Failure  :   Write an exception log and then raise an exception
+
+        Version     :   1.2
+        Revisions   :   moved setup to cloud
+        """
+        logging.info("Entered initiate_data_ingestion method of Data_Ingestion class")
         try:
             # exporting data from mongodb to the feature store file (sensor.csv) and return the dataframe
             dataframe = self.export_data_into_feature_store()
@@ -85,6 +104,8 @@ class DataIngestion:
 
             # schema has some columns which are not required for training the model, so we will drop those columns
             dataframe = dataframe.drop(_schema_config[SCHEMA_DROP_COLS], axis=1)
+
+            logging.info("Got the data from mongodb")
 
             # split the feature store file (sensor.csv) into train and test file
             self.data_train_test_split(dataframe=dataframe)
@@ -96,4 +117,4 @@ class DataIngestion:
             )
             return data_ingestion_artifact
         except Exception as e:
-            raise SensorException(e, sys)
+            raise SensorException(e, sys) from e
