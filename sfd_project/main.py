@@ -82,11 +82,15 @@ async def predict_route():
         # # Run the prediction pipeline on cloud
         # prediction_pipeline.run_pipeline()
 
+        # return Response(
+        #     "Prediction successful and predictions are stored in s3 bucket !!"
+        # )
+
         # For local testing purpose
         prediction_pipeline.run_pipeline_locally()
 
         return Response(
-            "Prediction successful and predictions are stored in s3 bucket !!"
+            "Prediction successful and predictions are stored in local_prediction_checkup_bucket folder!"
         )
 
     except Exception as e:
