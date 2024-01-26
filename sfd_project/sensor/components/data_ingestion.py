@@ -27,10 +27,14 @@ class DataIngestion:
 
             # creating instance of SensorData class to export data from mongodb
             sensor_data = SensorData()
+
+            logging.info("Created instance of SensorData class")
+
             # exporting data from mongodb in form of dataframe
             dataframe = sensor_data.export_collection_as_dataframe(
                 collection_name=self.data_ingestion_config.collection_name
             )
+            logging.info("Pulled the data from mongodb")
             # creating path to save the feature store file: sensor.csv
             feature_store_file_path = self.data_ingestion_config.feature_store_file_path
 
@@ -40,6 +44,8 @@ class DataIngestion:
 
             # exporting dataframe to feature store file path, sensor.csv, index is false as we don't want to save index column
             dataframe.to_csv(feature_store_file_path, index=False, header=True)
+
+            logging.info("Exported data from MongoDB to feature store")
             return dataframe
         except Exception as e:
             raise SensorException(e, sys)
@@ -100,6 +106,7 @@ class DataIngestion:
             # exporting data from mongodb to the feature store file (sensor.csv) and return the dataframe
             dataframe = self.export_data_into_feature_store()
 
+            logging.info("Data was sucessfuly exported from MongoDB to feature store")
             _schema_config = read_yaml_file(SCHEMA_FILE_PATH)
 
             # schema has some columns which are not required for training the model, so we will drop those columns

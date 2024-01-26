@@ -2,6 +2,7 @@ import pymongo
 from sensor.constant.database import DATABASE_NAME
 from sensor.constant.env_variables import MONGODB_URL_KEY
 from sensor.exception_code.exception import SensorException
+from sensor.logger_code.logger import logging
 import certifi
 import os
 import sys
@@ -39,7 +40,11 @@ class MongoDBClient:
                 #     MongoDBClient.client = pymongo.MongoClient(
                 #         mongo_db_url, tlsCAFile=ca)
             self.client = MongoDBClient.client
+
+            logging.info(f"Connected to MongoDB: {self.client}")
+
             self.database = self.client[database_name]
+            logging.info(f"Connected to database: {self.database}")
             self.database_name = database_name
         except Exception as e:
             raise SensorException(e, sys)
