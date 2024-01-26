@@ -12,7 +12,12 @@ from sensor.logger_code.logger import logging
 
 from sensor.ml.metric import calculate_metric
 from sensor.ml.model.estimator import SensorModel
-from sensor.utils.main_utils import load_numpy_array_data, load_object, save_object
+from sensor.utils.main_utils import (
+    load_numpy_array_data,
+    load_object,
+    save_object,
+    read_yaml_file,
+)
 
 # For method 2: Using ModelFactory from neuro_mf package==============================
 from neuro_mf import (
@@ -21,6 +26,7 @@ from neuro_mf import (
 
 # If method 1 is used, then uncomment the below line
 from xgboost import XGBClassifier
+from sensor.constant.trainingPipeline_consts import PARAMS_FILE_PATH
 
 
 class ModelTrainer:
@@ -32,10 +38,31 @@ class ModelTrainer:
         self.data_transformation_artifact = data_transformation_artifact
         self.model_trainer_config = model_trainer_config
 
+        self._params_config = read_yaml_file(PARAMS_FILE_PATH)
+
     # method 1, to train model using XGBClassifier directly if hyperparameter tuning is already done in jupyter notebook and not required to be done in the code.
     def train_model(self, x_train, y_train):
+        logging.info("Entered train_model method of ModelTrainer class")
         try:
-            xgb_clf = XGBClassifier()
+            logging.info(
+                f"Training model using XGBClassifier with params: {self._params_config}"
+            )
+            # logging.info(f"Learning rate type: {type(self._params_config)}")
+            # logging.info(f"XGBoost type: {type(self._params_config['XGBoost'])}")
+            # logging.info(f"XGBoost: {self._params_config['XGBoost']}")
+            # logging.info(
+            #     f"Learning Rate: {self._params_config['XGBoost']['learning_rate']}"
+            # )
+            # logging.info(
+            #     f"n_estimators: {self._params_config['XGBoost']['n_estimators']}"
+            # )
+            # logging.info(f"max_depth: {self._params_config['XGBoost']['max_depth']}")
+            xgb_clf = XGBClassifier(
+                learning_rate=self._params_config["XGBoost"]["learning_rate"],
+                n_estimators=self._params_config["XGBoost"]["n_estimators"],
+                max_depth=self._params_config["XGBoost"]["max_depth"],
+            )
+            logging.info("XGBClassifier object created!")
             xgb_clf.fit(x_train, y_train)
             return xgb_clf
         except Exception as e:
@@ -141,6 +168,7 @@ class ModelTrainer:
                 trained_model_file_path=self.model_trainer_config.trained_model_file_path,
                 train_metric_artifact=classification_train_metric,
                 test_metric_artifact=classification_test_metric,
+                model_params=self._params_config,
             )
             logging.info("Metric artifact created.")
 

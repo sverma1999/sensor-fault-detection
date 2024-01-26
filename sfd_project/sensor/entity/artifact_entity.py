@@ -54,6 +54,7 @@ class ModelTrainerArtifact:
     # For method 1
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
+    model_params: dict
 
 
 # For method 2: Using ModelFactory from neuro_mf package==============================

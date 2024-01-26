@@ -21,4 +21,5 @@ types-s3transfer
 watchfiles
 websockets
 wincertstore
+mlflow
 -e .

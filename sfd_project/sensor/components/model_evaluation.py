@@ -5,7 +5,7 @@ from sensor.ml.metric import calculate_metric
 from sensor.ml.model.estimator import TargetValueMapping, SensorModel, ModelResolver
 
 # from sensor.ml.model.estimator import TargetValueMapping
-from sensor.utils.main_utils import load_object, write_yaml_file
+from sensor.utils.main_utils import load_object, write_yaml_file, read_yaml_file
 from sensor.constant.trainingPipeline_consts import *
 from sensor.entity.config_entity import ModelEvaluationConfig, EvaluateModelResponse
 from sensor.ml.model.s3_estimator import SensorEstimator
@@ -24,6 +24,7 @@ from typing import Optional
 
 import pandas as pd
 from sklearn.metrics import f1_score
+import mlflow
 
 
 class ModelEvaluation:
@@ -200,7 +201,35 @@ class ModelEvaluation:
 
             logging.info("Metric calculated for trained model")
 
+            params = self.model_trainer_artifact.model_params
+            learning_rate = params["XGBoost"]["learning_rate"]
+            n_estimators = params["XGBoost"]["n_estimators"]
+            max_depth = params["XGBoost"]["max_depth"]
+
+            logging.info("----------------------------")
+
+            logging.info(f"params: {params}")
+            logging.info(f"type of params: {type(params)}")
+            logging.info(f"learning_rate: {learning_rate}")
+            logging.info(f"n_estimators: {n_estimators}")
+            logging.info(f"max_depth: {max_depth}")
+
+            logging.info("----------------------------")
+
             trained_model_f1_score = trained_model_score.f1_score
+            trained_model_recall_score = trained_model_score.recall_score
+            trained_model_precision_score = trained_model_score.precision_score
+
+            with mlflow.start_run():
+                # Log model params
+                mlflow.log_param("learning_rate", learning_rate)
+                mlflow.log_param("n_estimators", n_estimators)
+                mlflow.log_param("max_depth", max_depth)
+
+                # Log model metrics
+                mlflow.log_metric("F1 Score", trained_model_f1_score)
+                mlflow.log_metric("Recall Score", trained_model_recall_score)
+                mlflow.log_metric("Precision Score", trained_model_precision_score)
 
             best_model_f1_score = None
 

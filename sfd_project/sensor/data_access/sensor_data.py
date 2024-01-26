@@ -7,6 +7,7 @@ import json
 from sensor.configuration.mongo_db_connection import MongoDBClient
 from sensor.constant.database import DATABASE_NAME
 from sensor.exception_code.exception import SensorException
+from sensor.logger_code.logger import logging
 
 
 # this class can be used by any component, exporting from any database or collection.
@@ -49,10 +50,17 @@ class SensorData:
             return DataFrame of collection
             """
             if database_name is None:
+                logging.info("Database name is not provided, using default database")
                 collection = self.mongo_client.database[collection_name]
+                # logging.info(f"collection name is: {collection}")
             else:
+                logging.info("Using provided database name")
                 collection = self.mongo_client[database_name][collection_name]
+            logging.info(f"collection name is: {collection}")
+            logging.info(f"list(collection.find()): {collection.find()}")
             df = pd.DataFrame(list(collection.find()))
+
+            logging.info("Exported collection as dataframe")
 
             # drop the _id column from the dataframe, as it is not required
             if "_id" in df.columns.to_list():

@@ -6,6 +6,7 @@ SAVED_MODEL_DIR = os.path.join("saved_model")
 TARGET_COLUMN = "class"
 PIPELINE_NAME: str = "sensor"
 ARTIFACT_DIR: str = "artifact"
+PARAMS_FILE_PATH: str = os.path.join("config", "params.yaml")
 
 # Common file name
 FILE_NAME: str = "sensor.csv"
