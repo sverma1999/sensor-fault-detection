@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/6b2c0119f48947319f74626b00551ec9/artifacts
+end_time: 1706313077206
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6b2c0119f48947319f74626b00551ec9
+run_name: gifted-shrimp-349
+run_uuid: 6b2c0119f48947319f74626b00551ec9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313077182
+status: 3
+tags: []
+user_id: shubhamverma

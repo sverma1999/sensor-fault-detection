@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/bb07898d8d7940359b2833a08e55960b/artifacts
+end_time: 1706314184890
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bb07898d8d7940359b2833a08e55960b
+run_name: casual-sow-571
+run_uuid: bb07898d8d7940359b2833a08e55960b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314184865
+status: 3
+tags: []
+user_id: shubhamverma

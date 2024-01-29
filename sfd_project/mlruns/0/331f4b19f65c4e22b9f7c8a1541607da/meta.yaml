@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/331f4b19f65c4e22b9f7c8a1541607da/artifacts
+end_time: 1706309416902
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 331f4b19f65c4e22b9f7c8a1541607da
+run_name: adorable-rook-598
+run_uuid: 331f4b19f65c4e22b9f7c8a1541607da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309416873
+status: 3
+tags: []
+user_id: shubhamverma

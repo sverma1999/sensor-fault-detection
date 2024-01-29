@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/8c64dbd25396412cb95935fb95c2360d/artifacts
+end_time: 1706310932323
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8c64dbd25396412cb95935fb95c2360d
+run_name: polite-croc-41
+run_uuid: 8c64dbd25396412cb95935fb95c2360d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310932299
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/828d34ae60d84f8493972be1b9c751b5/artifacts
+end_time: 1706310087268
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 828d34ae60d84f8493972be1b9c751b5
+run_name: painted-sloth-730
+run_uuid: 828d34ae60d84f8493972be1b9c751b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310087248
+status: 3
+tags: []
+user_id: shubhamverma

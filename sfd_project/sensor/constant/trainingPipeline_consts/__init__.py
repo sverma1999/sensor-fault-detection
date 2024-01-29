@@ -7,6 +7,8 @@ TARGET_COLUMN = "class"
 PIPELINE_NAME: str = "sensor"
 ARTIFACT_DIR: str = "artifact"
 PARAMS_FILE_PATH: str = os.path.join("config", "params.yaml")
+LOCAL_DATA_DIR: str = "data"
+LOCAL_DATA_INPUT_FILE_NAME: str = "sensor_data.csv"
 
 # Common file name
 FILE_NAME: str = "sensor.csv"

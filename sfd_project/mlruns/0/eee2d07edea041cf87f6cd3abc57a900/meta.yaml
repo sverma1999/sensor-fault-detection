@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/eee2d07edea041cf87f6cd3abc57a900/artifacts
+end_time: 1706313788778
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eee2d07edea041cf87f6cd3abc57a900
+run_name: calm-fox-685
+run_uuid: eee2d07edea041cf87f6cd3abc57a900
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313788757
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/10a79deddd7744ad86ffa963b4e9475d/artifacts
+end_time: 1706309972678
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 10a79deddd7744ad86ffa963b4e9475d
+run_name: funny-sloth-132
+run_uuid: 10a79deddd7744ad86ffa963b4e9475d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309972651
+status: 3
+tags: []
+user_id: shubhamverma

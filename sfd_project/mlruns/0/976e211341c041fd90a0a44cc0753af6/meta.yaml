@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/976e211341c041fd90a0a44cc0753af6/artifacts
+end_time: 1706312874608
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 976e211341c041fd90a0a44cc0753af6
+run_name: grandiose-finch-968
+run_uuid: 976e211341c041fd90a0a44cc0753af6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312874586
+status: 3
+tags: []
+user_id: shubhamverma

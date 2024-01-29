@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/22d3b9274be9441fa40046b81a318762/artifacts
+end_time: 1706315803652
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 22d3b9274be9441fa40046b81a318762
+run_name: popular-rat-245
+run_uuid: 22d3b9274be9441fa40046b81a318762
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315803625
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/349706fcccf94ec49931efbbaf0c45f0/artifacts
+end_time: 1706312446210
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 349706fcccf94ec49931efbbaf0c45f0
+run_name: incongruous-rook-145
+run_uuid: 349706fcccf94ec49931efbbaf0c45f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312446188
+status: 3
+tags: []
+user_id: shubhamverma

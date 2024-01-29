@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/0c71763c2903465ca7f8a0b21c1f05a2/artifacts
+end_time: 1706315871882
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0c71763c2903465ca7f8a0b21c1f05a2
+run_name: nosy-toad-924
+run_uuid: 0c71763c2903465ca7f8a0b21c1f05a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315871854
+status: 3
+tags: []
+user_id: shubhamverma

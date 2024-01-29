@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/d32c9b3c50b7472aae86ff30f2b0f598/artifacts
+end_time: 1706316424105
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d32c9b3c50b7472aae86ff30f2b0f598
+run_name: lyrical-shad-672
+run_uuid: d32c9b3c50b7472aae86ff30f2b0f598
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316424076
+status: 3
+tags: []
+user_id: shubhamverma

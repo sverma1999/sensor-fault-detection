@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/fdddc0aa99044913bf25c15033da6dbc/artifacts
+end_time: 1706313334584
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fdddc0aa99044913bf25c15033da6dbc
+run_name: adaptable-seal-940
+run_uuid: fdddc0aa99044913bf25c15033da6dbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313334562
+status: 3
+tags: []
+user_id: shubhamverma

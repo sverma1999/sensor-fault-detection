@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/cbd77ea6b3cc4384ab380ad9c9456e53/artifacts
+end_time: 1706315614842
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cbd77ea6b3cc4384ab380ad9c9456e53
+run_name: upbeat-snipe-98
+run_uuid: cbd77ea6b3cc4384ab380ad9c9456e53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315614815
+status: 3
+tags: []
+user_id: shubhamverma

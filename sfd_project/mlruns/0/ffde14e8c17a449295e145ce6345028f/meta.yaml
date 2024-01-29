@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/ffde14e8c17a449295e145ce6345028f/artifacts
+end_time: 1706308377897
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ffde14e8c17a449295e145ce6345028f
+run_name: righteous-fox-460
+run_uuid: ffde14e8c17a449295e145ce6345028f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706308377873
+status: 3
+tags: []
+user_id: shubhamverma

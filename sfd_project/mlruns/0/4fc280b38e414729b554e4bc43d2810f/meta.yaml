@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/4fc280b38e414729b554e4bc43d2810f/artifacts
+end_time: 1706314390111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4fc280b38e414729b554e4bc43d2810f
+run_name: bouncy-zebra-250
+run_uuid: 4fc280b38e414729b554e4bc43d2810f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314390089
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/fb611dbb9d854b0f8383fec998271336/artifacts
+end_time: 1706316190758
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb611dbb9d854b0f8383fec998271336
+run_name: resilient-wolf-867
+run_uuid: fb611dbb9d854b0f8383fec998271336
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316190732
+status: 3
+tags: []
+user_id: shubhamverma

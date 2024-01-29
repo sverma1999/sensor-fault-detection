@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/0c4a349b2cbc420083e31867ca540eb2/artifacts
+end_time: 1706311200375
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0c4a349b2cbc420083e31867ca540eb2
+run_name: shivering-ox-831
+run_uuid: 0c4a349b2cbc420083e31867ca540eb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311200356
+status: 3
+tags: []
+user_id: shubhamverma

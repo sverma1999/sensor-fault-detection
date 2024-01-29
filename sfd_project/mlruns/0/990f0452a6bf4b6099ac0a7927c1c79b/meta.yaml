@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/990f0452a6bf4b6099ac0a7927c1c79b/artifacts
+end_time: 1706317492021
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 990f0452a6bf4b6099ac0a7927c1c79b
+run_name: dapper-robin-228
+run_uuid: 990f0452a6bf4b6099ac0a7927c1c79b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706317491978
+status: 3
+tags: []
+user_id: shubhamverma

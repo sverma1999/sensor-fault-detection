@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/54f8fddca7524ce68922d15ec420bdf9/artifacts
+end_time: 1706310371715
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 54f8fddca7524ce68922d15ec420bdf9
+run_name: victorious-fly-767
+run_uuid: 54f8fddca7524ce68922d15ec420bdf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310371695
+status: 3
+tags: []
+user_id: shubhamverma

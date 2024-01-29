@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/9d52ad9c24664acb8295f6527bc69f2f/artifacts
+end_time: 1706315134203
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d52ad9c24664acb8295f6527bc69f2f
+run_name: tasteful-fowl-99
+run_uuid: 9d52ad9c24664acb8295f6527bc69f2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315134174
+status: 3
+tags: []
+user_id: shubhamverma

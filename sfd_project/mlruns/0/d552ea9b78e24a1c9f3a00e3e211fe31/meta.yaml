@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/d552ea9b78e24a1c9f3a00e3e211fe31/artifacts
+end_time: 1706313384237
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d552ea9b78e24a1c9f3a00e3e211fe31
+run_name: legendary-zebra-710
+run_uuid: d552ea9b78e24a1c9f3a00e3e211fe31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313384214
+status: 3
+tags: []
+user_id: shubhamverma

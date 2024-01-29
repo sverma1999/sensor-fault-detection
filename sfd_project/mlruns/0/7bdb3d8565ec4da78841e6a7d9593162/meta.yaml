@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/7bdb3d8565ec4da78841e6a7d9593162/artifacts
+end_time: 1706309567418
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7bdb3d8565ec4da78841e6a7d9593162
+run_name: resilient-stag-76
+run_uuid: 7bdb3d8565ec4da78841e6a7d9593162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309567394
+status: 3
+tags: []
+user_id: shubhamverma

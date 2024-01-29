@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/cf7c15f9ae2a441fbad20ad4c20252a9/artifacts
+end_time: 1706309758393
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cf7c15f9ae2a441fbad20ad4c20252a9
+run_name: clumsy-mule-227
+run_uuid: cf7c15f9ae2a441fbad20ad4c20252a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309758368
+status: 3
+tags: []
+user_id: shubhamverma

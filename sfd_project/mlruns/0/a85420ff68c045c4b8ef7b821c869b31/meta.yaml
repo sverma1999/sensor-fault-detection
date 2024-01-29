@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/a85420ff68c045c4b8ef7b821c869b31/artifacts
+end_time: 1706315921666
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a85420ff68c045c4b8ef7b821c869b31
+run_name: delightful-snail-7
+run_uuid: a85420ff68c045c4b8ef7b821c869b31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315921639
+status: 3
+tags: []
+user_id: shubhamverma

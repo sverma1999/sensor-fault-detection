@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/070d73ce5abf4e329cdf33826e67820e/artifacts
+end_time: 1706314040696
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 070d73ce5abf4e329cdf33826e67820e
+run_name: learned-croc-143
+run_uuid: 070d73ce5abf4e329cdf33826e67820e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314040674
+status: 3
+tags: []
+user_id: shubhamverma

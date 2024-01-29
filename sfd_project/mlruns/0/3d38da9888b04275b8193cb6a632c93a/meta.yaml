@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/3d38da9888b04275b8193cb6a632c93a/artifacts
+end_time: 1706313310726
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d38da9888b04275b8193cb6a632c93a
+run_name: beautiful-cub-531
+run_uuid: 3d38da9888b04275b8193cb6a632c93a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313310678
+status: 3
+tags: []
+user_id: shubhamverma

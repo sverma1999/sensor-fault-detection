@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/f6a14e806ac34b2cbc96927119b68b32/artifacts
+end_time: 1706312004358
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f6a14e806ac34b2cbc96927119b68b32
+run_name: nebulous-frog-36
+run_uuid: f6a14e806ac34b2cbc96927119b68b32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312004337
+status: 3
+tags: []
+user_id: shubhamverma

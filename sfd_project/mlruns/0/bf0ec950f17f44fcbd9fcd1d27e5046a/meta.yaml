@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/bf0ec950f17f44fcbd9fcd1d27e5046a/artifacts
+end_time: 1706314701106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bf0ec950f17f44fcbd9fcd1d27e5046a
+run_name: awesome-crab-621
+run_uuid: bf0ec950f17f44fcbd9fcd1d27e5046a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314701079
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/7dce068b9b9e4e4884d3ffd881e648a0/artifacts
+end_time: 1706312745571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7dce068b9b9e4e4884d3ffd881e648a0
+run_name: zealous-stork-743
+run_uuid: 7dce068b9b9e4e4884d3ffd881e648a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312745549
+status: 3
+tags: []
+user_id: shubhamverma

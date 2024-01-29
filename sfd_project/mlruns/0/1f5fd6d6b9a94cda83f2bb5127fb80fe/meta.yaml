@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/1f5fd6d6b9a94cda83f2bb5127fb80fe/artifacts
+end_time: 1706313283933
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1f5fd6d6b9a94cda83f2bb5127fb80fe
+run_name: big-dolphin-588
+run_uuid: 1f5fd6d6b9a94cda83f2bb5127fb80fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313283904
+status: 3
+tags: []
+user_id: shubhamverma

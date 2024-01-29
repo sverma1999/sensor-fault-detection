@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/48ceae53eb5949caa3480a38e2153a7b/artifacts
+end_time: 1706309908267
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 48ceae53eb5949caa3480a38e2153a7b
+run_name: capricious-bird-44
+run_uuid: 48ceae53eb5949caa3480a38e2153a7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309908238
+status: 3
+tags: []
+user_id: shubhamverma

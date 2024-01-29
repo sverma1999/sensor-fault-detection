@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/87fa5867c1b04592a282ebda997573fe/artifacts
+end_time: 1706312207923
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 87fa5867c1b04592a282ebda997573fe
+run_name: sneaky-lynx-296
+run_uuid: 87fa5867c1b04592a282ebda997573fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312207902
+status: 3
+tags: []
+user_id: shubhamverma

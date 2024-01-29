@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/324f5137e8a04171bbacbb703d37049f/artifacts
+end_time: 1706310029036
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 324f5137e8a04171bbacbb703d37049f
+run_name: resilient-chimp-519
+run_uuid: 324f5137e8a04171bbacbb703d37049f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310029011
+status: 3
+tags: []
+user_id: shubhamverma

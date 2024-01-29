@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/80009a22625743e8a2059b0ce17586d1/artifacts
+end_time: 1706310810991
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80009a22625743e8a2059b0ce17586d1
+run_name: bedecked-loon-115
+run_uuid: 80009a22625743e8a2059b0ce17586d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310810968
+status: 3
+tags: []
+user_id: shubhamverma

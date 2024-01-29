@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the arrays of parameters
-learning_rates=(0.05 0.10 0.15 0.20 0.25 0.30)
+learning_rates=(0.01 0.03 0.05 0.10 0.15 0.20 0.25 0.30)
 n_estimators=(100 200 300 400 500)
 max_depths=(1 3 5 6 8 10 12 15)
 

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/e4931f3c87194f2dba80b6301a5274df/artifacts
+end_time: 1706310001694
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e4931f3c87194f2dba80b6301a5274df
+run_name: caring-cat-322
+run_uuid: e4931f3c87194f2dba80b6301a5274df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310001668
+status: 3
+tags: []
+user_id: shubhamverma

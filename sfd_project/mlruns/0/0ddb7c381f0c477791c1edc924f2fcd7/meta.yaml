@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/0ddb7c381f0c477791c1edc924f2fcd7/artifacts
+end_time: 1706316029571
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0ddb7c381f0c477791c1edc924f2fcd7
+run_name: gregarious-elk-417
+run_uuid: 0ddb7c381f0c477791c1edc924f2fcd7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316029546
+status: 3
+tags: []
+user_id: shubhamverma

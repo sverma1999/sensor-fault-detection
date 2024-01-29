@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/13ec083e4fea439e9fc395efd2e824e1/artifacts
+end_time: 1706311096939
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 13ec083e4fea439e9fc395efd2e824e1
+run_name: nebulous-lamb-917
+run_uuid: 13ec083e4fea439e9fc395efd2e824e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311096915
+status: 3
+tags: []
+user_id: shubhamverma

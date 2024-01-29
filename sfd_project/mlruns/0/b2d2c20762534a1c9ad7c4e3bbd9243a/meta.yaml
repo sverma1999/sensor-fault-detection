@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b2d2c20762534a1c9ad7c4e3bbd9243a/artifacts
+end_time: 1706314601063
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b2d2c20762534a1c9ad7c4e3bbd9243a
+run_name: unruly-gull-298
+run_uuid: b2d2c20762534a1c9ad7c4e3bbd9243a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314600986
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/4095bfdebea24adbb5d585e865e454d1/artifacts
+end_time: 1706316332535
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4095bfdebea24adbb5d585e865e454d1
+run_name: spiffy-seal-133
+run_uuid: 4095bfdebea24adbb5d585e865e454d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316332509
+status: 3
+tags: []
+user_id: shubhamverma

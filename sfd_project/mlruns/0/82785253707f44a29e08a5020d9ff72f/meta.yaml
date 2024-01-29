@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/82785253707f44a29e08a5020d9ff72f/artifacts
+end_time: 1706310058338
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 82785253707f44a29e08a5020d9ff72f
+run_name: blushing-duck-292
+run_uuid: 82785253707f44a29e08a5020d9ff72f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310058313
+status: 3
+tags: []
+user_id: shubhamverma

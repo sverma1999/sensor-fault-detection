@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/35c902d1c65f42c6a430d88cc0c8af41/artifacts
+end_time: 1706316224407
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 35c902d1c65f42c6a430d88cc0c8af41
+run_name: funny-cub-279
+run_uuid: 35c902d1c65f42c6a430d88cc0c8af41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316224381
+status: 3
+tags: []
+user_id: shubhamverma
