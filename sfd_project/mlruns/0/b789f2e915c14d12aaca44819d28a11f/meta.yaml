@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b789f2e915c14d12aaca44819d28a11f/artifacts
+end_time: 1706317305381
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b789f2e915c14d12aaca44819d28a11f
+run_name: loud-sow-716
+run_uuid: b789f2e915c14d12aaca44819d28a11f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706317305350
+status: 3
+tags: []
+user_id: shubhamverma

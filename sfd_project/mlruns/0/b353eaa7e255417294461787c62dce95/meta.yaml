@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b353eaa7e255417294461787c62dce95/artifacts
+end_time: 1706313631061
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b353eaa7e255417294461787c62dce95
+run_name: dapper-panda-209
+run_uuid: b353eaa7e255417294461787c62dce95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313631039
+status: 3
+tags: []
+user_id: shubhamverma

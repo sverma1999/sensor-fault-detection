@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/1b3e2a541bba43ffb42f239e4fd06cad/artifacts
+end_time: 1706309945807
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1b3e2a541bba43ffb42f239e4fd06cad
+run_name: handsome-panda-460
+run_uuid: 1b3e2a541bba43ffb42f239e4fd06cad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309945779
+status: 3
+tags: []
+user_id: shubhamverma

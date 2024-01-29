@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/528c613946ee490d8eb384a0bb5d7e6a/artifacts
+end_time: 1706313261375
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 528c613946ee490d8eb384a0bb5d7e6a
+run_name: valuable-fly-280
+run_uuid: 528c613946ee490d8eb384a0bb5d7e6a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313261351
+status: 3
+tags: []
+user_id: shubhamverma

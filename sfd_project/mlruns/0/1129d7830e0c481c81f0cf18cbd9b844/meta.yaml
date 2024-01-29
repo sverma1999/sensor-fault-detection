@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/1129d7830e0c481c81f0cf18cbd9b844/artifacts
+end_time: 1706313473628
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1129d7830e0c481c81f0cf18cbd9b844
+run_name: lyrical-conch-703
+run_uuid: 1129d7830e0c481c81f0cf18cbd9b844
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313473599
+status: 3
+tags: []
+user_id: shubhamverma

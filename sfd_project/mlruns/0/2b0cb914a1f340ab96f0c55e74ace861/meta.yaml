@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/2b0cb914a1f340ab96f0c55e74ace861/artifacts
+end_time: 1706314326012
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2b0cb914a1f340ab96f0c55e74ace861
+run_name: bittersweet-yak-499
+run_uuid: 2b0cb914a1f340ab96f0c55e74ace861
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314325981
+status: 3
+tags: []
+user_id: shubhamverma

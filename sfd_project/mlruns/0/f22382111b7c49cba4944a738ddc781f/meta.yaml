@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/f22382111b7c49cba4944a738ddc781f/artifacts
+end_time: 1706313872887
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f22382111b7c49cba4944a738ddc781f
+run_name: orderly-loon-113
+run_uuid: f22382111b7c49cba4944a738ddc781f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313872861
+status: 3
+tags: []
+user_id: shubhamverma

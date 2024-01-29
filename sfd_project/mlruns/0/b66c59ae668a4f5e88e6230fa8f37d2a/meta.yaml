@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b66c59ae668a4f5e88e6230fa8f37d2a/artifacts
+end_time: 1706308687645
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b66c59ae668a4f5e88e6230fa8f37d2a
+run_name: glamorous-skunk-77
+run_uuid: b66c59ae668a4f5e88e6230fa8f37d2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706308687620
+status: 3
+tags: []
+user_id: shubhamverma

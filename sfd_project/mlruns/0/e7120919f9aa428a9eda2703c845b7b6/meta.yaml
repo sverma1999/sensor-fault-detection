@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/e7120919f9aa428a9eda2703c845b7b6/artifacts
+end_time: 1706310304590
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7120919f9aa428a9eda2703c845b7b6
+run_name: beautiful-doe-654
+run_uuid: e7120919f9aa428a9eda2703c845b7b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310304571
+status: 3
+tags: []
+user_id: shubhamverma

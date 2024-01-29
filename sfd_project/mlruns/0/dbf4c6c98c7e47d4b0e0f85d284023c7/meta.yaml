@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/dbf4c6c98c7e47d4b0e0f85d284023c7/artifacts
+end_time: 1706314624428
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dbf4c6c98c7e47d4b0e0f85d284023c7
+run_name: bald-mink-338
+run_uuid: dbf4c6c98c7e47d4b0e0f85d284023c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314624400
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/a3e3e58584704df081141762c3b9b565/artifacts
+end_time: 1706309707534
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a3e3e58584704df081141762c3b9b565
+run_name: lyrical-grub-578
+run_uuid: a3e3e58584704df081141762c3b9b565
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309707505
+status: 3
+tags: []
+user_id: shubhamverma

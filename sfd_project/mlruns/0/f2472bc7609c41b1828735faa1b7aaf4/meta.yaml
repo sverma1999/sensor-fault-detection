@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/f2472bc7609c41b1828735faa1b7aaf4/artifacts
+end_time: 1706309126367
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f2472bc7609c41b1828735faa1b7aaf4
+run_name: traveling-ray-189
+run_uuid: f2472bc7609c41b1828735faa1b7aaf4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309126342
+status: 3
+tags: []
+user_id: shubhamverma

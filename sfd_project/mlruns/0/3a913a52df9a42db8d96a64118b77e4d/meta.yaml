@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/3a913a52df9a42db8d96a64118b77e4d/artifacts
+end_time: 1706310998602
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a913a52df9a42db8d96a64118b77e4d
+run_name: nebulous-mare-107
+run_uuid: 3a913a52df9a42db8d96a64118b77e4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310998583
+status: 3
+tags: []
+user_id: shubhamverma

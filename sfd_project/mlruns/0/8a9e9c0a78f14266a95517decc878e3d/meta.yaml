@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/8a9e9c0a78f14266a95517decc878e3d/artifacts
+end_time: 1706316606592
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a9e9c0a78f14266a95517decc878e3d
+run_name: unique-fish-948
+run_uuid: 8a9e9c0a78f14266a95517decc878e3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316606566
+status: 3
+tags: []
+user_id: shubhamverma

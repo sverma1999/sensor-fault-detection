@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/1bad5700492e4700a1133251a5b76e0d/artifacts
+end_time: 1706310195561
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1bad5700492e4700a1133251a5b76e0d
+run_name: hilarious-dolphin-57
+run_uuid: 1bad5700492e4700a1133251a5b76e0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310195534
+status: 3
+tags: []
+user_id: shubhamverma

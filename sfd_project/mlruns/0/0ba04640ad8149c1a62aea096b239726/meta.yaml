@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/0ba04640ad8149c1a62aea096b239726/artifacts
+end_time: 1706316504582
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0ba04640ad8149c1a62aea096b239726
+run_name: defiant-hound-337
+run_uuid: 0ba04640ad8149c1a62aea096b239726
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706316504546
+status: 3
+tags: []
+user_id: shubhamverma

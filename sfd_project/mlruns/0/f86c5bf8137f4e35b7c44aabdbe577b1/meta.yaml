@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/f86c5bf8137f4e35b7c44aabdbe577b1/artifacts
+end_time: 1706311622962
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f86c5bf8137f4e35b7c44aabdbe577b1
+run_name: marvelous-lynx-537
+run_uuid: f86c5bf8137f4e35b7c44aabdbe577b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311622941
+status: 3
+tags: []
+user_id: shubhamverma

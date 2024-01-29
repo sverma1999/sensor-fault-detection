@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/a18cde1c5c3f46d198f6571fe59d37f8/artifacts
+end_time: 1706313928782
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a18cde1c5c3f46d198f6571fe59d37f8
+run_name: wise-rat-487
+run_uuid: a18cde1c5c3f46d198f6571fe59d37f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313928755
+status: 3
+tags: []
+user_id: shubhamverma

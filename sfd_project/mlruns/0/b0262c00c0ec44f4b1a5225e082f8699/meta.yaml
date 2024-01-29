@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b0262c00c0ec44f4b1a5225e082f8699/artifacts
+end_time: 1706309321131
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b0262c00c0ec44f4b1a5225e082f8699
+run_name: dazzling-robin-741
+run_uuid: b0262c00c0ec44f4b1a5225e082f8699
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309321096
+status: 3
+tags: []
+user_id: shubhamverma

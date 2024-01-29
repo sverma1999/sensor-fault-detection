@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/c41a11397850409884ca0fe96fac14a7/artifacts
+end_time: 1706312082903
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c41a11397850409884ca0fe96fac14a7
+run_name: omniscient-gnat-596
+run_uuid: c41a11397850409884ca0fe96fac14a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312082882
+status: 3
+tags: []
+user_id: shubhamverma

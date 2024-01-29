@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/5237fe86b00d4c0da9f9b4aaf1cb8bd5/artifacts
+end_time: 1706313358419
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5237fe86b00d4c0da9f9b4aaf1cb8bd5
+run_name: legendary-hawk-339
+run_uuid: 5237fe86b00d4c0da9f9b4aaf1cb8bd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313358397
+status: 3
+tags: []
+user_id: shubhamverma

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/c5d66d4924b6495e80991dccf5ee091e/artifacts
+end_time: 1706311647218
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c5d66d4924b6495e80991dccf5ee091e
+run_name: omniscient-frog-519
+run_uuid: c5d66d4924b6495e80991dccf5ee091e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311647194
+status: 3
+tags: []
+user_id: shubhamverma

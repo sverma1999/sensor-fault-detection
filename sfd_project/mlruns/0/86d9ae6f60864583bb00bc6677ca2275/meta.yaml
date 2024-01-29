@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/86d9ae6f60864583bb00bc6677ca2275/artifacts
+end_time: 1706314858318
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86d9ae6f60864583bb00bc6677ca2275
+run_name: abundant-vole-513
+run_uuid: 86d9ae6f60864583bb00bc6677ca2275
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314858278
+status: 3
+tags: []
+user_id: shubhamverma

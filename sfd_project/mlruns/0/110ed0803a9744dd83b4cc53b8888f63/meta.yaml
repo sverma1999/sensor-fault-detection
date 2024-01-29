@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/110ed0803a9744dd83b4cc53b8888f63/artifacts
+end_time: 1706315825227
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 110ed0803a9744dd83b4cc53b8888f63
+run_name: bold-horse-235
+run_uuid: 110ed0803a9744dd83b4cc53b8888f63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315825199
+status: 3
+tags: []
+user_id: shubhamverma

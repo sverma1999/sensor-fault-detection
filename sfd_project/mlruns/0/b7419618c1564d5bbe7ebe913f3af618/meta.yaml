@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b7419618c1564d5bbe7ebe913f3af618/artifacts
+end_time: 1706313502621
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7419618c1564d5bbe7ebe913f3af618
+run_name: loud-sponge-407
+run_uuid: b7419618c1564d5bbe7ebe913f3af618
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706313502593
+status: 3
+tags: []
+user_id: shubhamverma

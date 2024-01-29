@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/683fd717024c4d19975ce47c17b5a9b8/artifacts
+end_time: 1706314432078
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 683fd717024c4d19975ce47c17b5a9b8
+run_name: puzzled-hound-548
+run_uuid: 683fd717024c4d19975ce47c17b5a9b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314432050
+status: 3
+tags: []
+user_id: shubhamverma

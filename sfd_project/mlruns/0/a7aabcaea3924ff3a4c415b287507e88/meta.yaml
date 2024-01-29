@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/a7aabcaea3924ff3a4c415b287507e88/artifacts
+end_time: 1706311265955
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7aabcaea3924ff3a4c415b287507e88
+run_name: honorable-crab-713
+run_uuid: a7aabcaea3924ff3a4c415b287507e88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311265933
+status: 3
+tags: []
+user_id: shubhamverma

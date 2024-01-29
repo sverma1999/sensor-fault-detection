@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/28d1491d0c2543f4a4d8eff6ebf4abae/artifacts
+end_time: 1706312532788
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 28d1491d0c2543f4a4d8eff6ebf4abae
+run_name: bouncy-shrike-683
+run_uuid: 28d1491d0c2543f4a4d8eff6ebf4abae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312532765
+status: 3
+tags: []
+user_id: shubhamverma

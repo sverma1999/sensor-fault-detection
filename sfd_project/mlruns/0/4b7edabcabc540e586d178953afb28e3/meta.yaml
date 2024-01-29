@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/4b7edabcabc540e586d178953afb28e3/artifacts
+end_time: 1706317060924
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b7edabcabc540e586d178953afb28e3
+run_name: big-quail-26
+run_uuid: 4b7edabcabc540e586d178953afb28e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706317060895
+status: 3
+tags: []
+user_id: shubhamverma

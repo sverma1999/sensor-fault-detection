@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/678f832663ce469a85a9a80521792681/artifacts
+end_time: 1706308439093
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 678f832663ce469a85a9a80521792681
+run_name: nervous-dove-668
+run_uuid: 678f832663ce469a85a9a80521792681
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706308439066
+status: 3
+tags: []
+user_id: shubhamverma

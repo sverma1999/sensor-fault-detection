@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/4990d17cf21d444681106fd3fbad898b/artifacts
+end_time: 1706311775780
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4990d17cf21d444681106fd3fbad898b
+run_name: magnificent-fox-285
+run_uuid: 4990d17cf21d444681106fd3fbad898b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311775752
+status: 3
+tags: []
+user_id: shubhamverma

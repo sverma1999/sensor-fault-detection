@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/17fa87ae45ab4a5a8fb7a2deb2ece3cf/artifacts
+end_time: 1706311814929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 17fa87ae45ab4a5a8fb7a2deb2ece3cf
+run_name: receptive-shrike-151
+run_uuid: 17fa87ae45ab4a5a8fb7a2deb2ece3cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311814906
+status: 3
+tags: []
+user_id: shubhamverma

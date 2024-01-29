@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/797ab7d0fb9e47d895d94fc894d3d0be/artifacts
+end_time: 1706314360504
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 797ab7d0fb9e47d895d94fc894d3d0be
+run_name: indecisive-fowl-489
+run_uuid: 797ab7d0fb9e47d895d94fc894d3d0be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706314360483
+status: 3
+tags: []
+user_id: shubhamverma

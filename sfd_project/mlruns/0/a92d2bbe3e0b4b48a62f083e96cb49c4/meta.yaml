@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/a92d2bbe3e0b4b48a62f083e96cb49c4/artifacts
+end_time: 1706310119332
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a92d2bbe3e0b4b48a62f083e96cb49c4
+run_name: languid-fly-97
+run_uuid: a92d2bbe3e0b4b48a62f083e96cb49c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706310119311
+status: 3
+tags: []
+user_id: shubhamverma

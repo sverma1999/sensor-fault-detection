@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/d6fb5de5c2d64026a25751b515d5d38e/artifacts
+end_time: 1706308543502
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d6fb5de5c2d64026a25751b515d5d38e
+run_name: treasured-sow-531
+run_uuid: d6fb5de5c2d64026a25751b515d5d38e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706308543471
+status: 3
+tags: []
+user_id: shubhamverma

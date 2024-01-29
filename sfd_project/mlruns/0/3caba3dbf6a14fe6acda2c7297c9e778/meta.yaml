@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/3caba3dbf6a14fe6acda2c7297c9e778/artifacts
+end_time: 1706312327316
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3caba3dbf6a14fe6acda2c7297c9e778
+run_name: suave-mouse-801
+run_uuid: 3caba3dbf6a14fe6acda2c7297c9e778
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312327293
+status: 3
+tags: []
+user_id: shubhamverma

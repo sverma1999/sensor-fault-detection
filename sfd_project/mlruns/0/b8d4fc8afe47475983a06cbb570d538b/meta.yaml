@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/b8d4fc8afe47475983a06cbb570d538b/artifacts
+end_time: 1706309080582
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8d4fc8afe47475983a06cbb570d538b
+run_name: bedecked-elk-85
+run_uuid: b8d4fc8afe47475983a06cbb570d538b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706309080556
+status: 3
+tags: []
+user_id: shubhamverma

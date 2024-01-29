@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/c7055f256fbe4bfa8671cc0a8c35363a/artifacts
+end_time: 1706315979605
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7055f256fbe4bfa8671cc0a8c35363a
+run_name: enchanting-gnu-94
+run_uuid: c7055f256fbe4bfa8671cc0a8c35363a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706315979577
+status: 3
+tags: []
+user_id: shubhamverma
