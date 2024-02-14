@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/38bb560404024c54b31c686ce4511844/artifacts
+end_time: 1707026489363
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38bb560404024c54b31c686ce4511844
+run_name: skittish-slug-527
+run_uuid: 38bb560404024c54b31c686ce4511844
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707026489298
+status: 3
+tags: []
+user_id: shubhamverma

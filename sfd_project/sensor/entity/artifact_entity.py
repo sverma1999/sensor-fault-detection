@@ -55,6 +55,7 @@ class ModelTrainerArtifact:
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
     model_params: dict
+    model: object
 
 
 # For method 2: Using ModelFactory from neuro_mf package==============================
@@ -72,6 +73,7 @@ class ModelEvaluationArtifact:
     best_model_path: str
     best_model_metric_artifact: ClassificationMetricArtifact
     trained_model_path: str
+    # shape_plots_dir_path: str
     # train_model_metric_artifact: ClassificationMetricArtifact
 
 

@@ -22,4 +22,5 @@ watchfiles
 websockets
 wincertstore
 mlflow
+shap
 -e .

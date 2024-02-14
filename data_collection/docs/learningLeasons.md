@@ -11,13 +11,14 @@ Kafka topics are divided into a number of partitions. Partitions allow you to pa
 
 ### Example Scenerio
 
-Assume, if there are 4 trucks and each has APS sensor, GPS sensor, and IMU sensor.
-Since they are three different sensors, they will publish data to three different topics.
-The data from APS sensor will be published to APS topic, the data from GPS sensor will be published to GPS topic, and the data from IMU sensor will be published to IMU topic.
+Assume, if there are 4 trucks and each has Air Pressure System (APS), Geographical Positioning System (GPS), and Electrical System (ES). Each system
+has its own components along with sensors to collect data.
+Since they are three different systems, they will publish data to three different topics.
+The data from APS system will be published to APS topic, the data from GPS system will be published to GPS topic, and the data from ES system will be published to IMU topic.
 
 Producers:
 
-- The four trucks are represented as producers. Each truck sends data to the respective topics ("truckX_aps_data," "truckX_gps_data," "truckX_imu_data") based on the type of data it is collecting.
+- The four trucks are represented as producers. Each truck sends data to the respective topics ("truckX_aps_data," "truckX_gps_data," "truckX_es_data") based on the type of data it is collecting.
 
 Consumers:
 
