@@ -25,6 +25,8 @@ from typing import Optional
 import pandas as pd
 from sklearn.metrics import f1_score
 import mlflow
+import shap
+import matplotlib.pyplot as plt
 
 
 class ModelEvaluation:
@@ -193,6 +195,12 @@ class ModelEvaluation:
             )
 
             logging.info("Trained model is loaded")
+
+            logging.info(
+                f"Trained model type: {type(self.model_trainer_artifact.model)}"
+            )
+            logging.info(f"Trained model: {self.model_trainer_artifact.model}")
+
             # run the prediction of x on trained model
             # y_hat_trained_model = trained_model.predict(x)
 
@@ -200,6 +208,70 @@ class ModelEvaluation:
             trained_model_score = calculate_metric(trained_model, x, y_true)
 
             logging.info("Metric calculated for trained model")
+
+            # Initialize the SHAP explainer
+            explainer = shap.Explainer(self.model_trainer_artifact.model)
+
+            # Explain model predictions on the test data (x)
+            shap_values = explainer(x)
+
+            # You can use the SHAP values to interpret feature importances and individual predictions
+
+            # Save the summary plot as an image file
+            shap_plot_img_path = self.model_eval_config.shap_plots_dir
+
+            os.makedirs(shap_plot_img_path, exist_ok=True)
+
+            shap_plot_img_summary = os.path.join(shap_plot_img_path, "shap_summary.png")
+
+            shap_plot_img_bar = os.path.join(shap_plot_img_path, "shap_bar_plot.png")
+
+            shap_plot_img_waterfall = os.path.join(
+                shap_plot_img_path, "shap_waterfall_plot.png"
+            )
+
+            logging.info(f"shap_plot_img_path: {shap_plot_img_path}")
+
+            logging.info(f"summary chart image saved to path: {shap_plot_img_summary}")
+            logging.info(
+                f"waterfall chart image saved to path: {shap_plot_img_waterfall}"
+            )
+            logging.info(f"bar chart image saved to path: {shap_plot_img_bar}")
+
+            # Create a bar plot to visualize feature importances ----------------------
+            shap.summary_plot(
+                shap_values, x, plot_type="bar", max_display=20, show=False
+            )
+            # shap.plots.bar(shap_values, show=False)
+
+            # Set the figure size before saving
+            plt.gcf().set_size_inches(20, 10)
+
+            plt.savefig(shap_plot_img_bar)
+            plt.close()
+
+            # Create a summary plot as an image file ----------------------
+            shap.summary_plot(shap_values, x, max_display=20, show=False)
+
+            # Set the figure size before saving
+            plt.gcf().set_size_inches(20, 10)
+
+            plt.savefig(shap_plot_img_summary)
+            plt.close()
+
+            # Create an Explanation object
+            # explanation = shap.Explanation(
+            #     values=shap_values[0], base_values=explainer.expected_value, data=x
+            # )
+
+            # Create a waterfall plot----------------------
+            shap.plots.waterfall(shap_values[18], max_display=20, show=False)
+
+            # Set the figure size before saving
+            plt.gcf().set_size_inches(20, 10)
+
+            plt.savefig(shap_plot_img_waterfall)
+            plt.close()
 
             params = self.model_trainer_artifact.model_params
             learning_rate = params["XGBoost"]["learning_rate"]
@@ -230,6 +302,11 @@ class ModelEvaluation:
                 mlflow.log_metric("F1 Score", trained_model_f1_score)
                 mlflow.log_metric("Recall Score", trained_model_recall_score)
                 mlflow.log_metric("Precision Score", trained_model_precision_score)
+
+                # Log model artifacts====================================
+                mlflow.log_artifact(shap_plot_img_summary)
+                mlflow.log_artifact(shap_plot_img_bar)
+                mlflow.log_artifact(shap_plot_img_waterfall)
 
             best_model_f1_score = None
 

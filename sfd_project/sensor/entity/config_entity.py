@@ -173,6 +173,18 @@ class ModelEvaluationConfig:
 
     s3_model_key_path: str = os.path.join(MODEL_PUSHER_S3_KEY, MODEL_FILE_NAME)
 
+    # shap_plots_dir: str = MODEL_EVALUATION_SHAP_PLOTS_DIR
+
+    # path to the model evaluation directory
+    model_evaluation_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, MODEL_EVALUATION_DIR_NAME
+    )
+
+    # # path to the shap plot files, inside the model evaluation directory
+    shap_plots_dir: str = os.path.join(
+        model_evaluation_dir, MODEL_EVALUATION_SHAP_PLOTS_DIR
+    )
+
 
 # For local purpose
 @dataclass

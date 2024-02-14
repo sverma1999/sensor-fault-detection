@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/shubhamverma/Documents/DataScienceAndML/iNeuron/MLDL_Course/Sensor-fault-detection/sensor-fault-detection/sfd_project/mlruns/0/7e547a8ac07c47c281739e3af2a02925/artifacts
+deleted_time: 1706561076809
+end_time: 1706490304941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7e547a8ac07c47c281739e3af2a02925
+run_name: mercurial-hound-367
+run_uuid: 7e547a8ac07c47c281739e3af2a02925
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706490304890
+status: 4
+tags: []
+user_id: shubhamverma

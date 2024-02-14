@@ -9,6 +9,7 @@ ARTIFACT_DIR: str = "artifact"
 PARAMS_FILE_PATH: str = os.path.join("config", "params.yaml")
 LOCAL_DATA_DIR: str = "data"
 LOCAL_DATA_INPUT_FILE_NAME: str = "sensor_data.csv"
+MODEL_EVALUATION_SHAP_PLOTS_DIR: str = "shap_plots"
 
 # Common file name
 FILE_NAME: str = "sensor.csv"

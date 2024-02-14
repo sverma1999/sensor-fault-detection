@@ -102,6 +102,8 @@ class ModelTrainer:
 
             logging.info("Model trained!")
 
+            logging.info(f"model type: {type(model)}")
+
             # predict for training set and find the classification metric
             classification_train_metric = calculate_metric(
                 model=model, x=x_train, y=y_train
@@ -169,6 +171,7 @@ class ModelTrainer:
                 train_metric_artifact=classification_train_metric,
                 test_metric_artifact=classification_test_metric,
                 model_params=self._params_config,
+                model=model,
             )
             logging.info("Metric artifact created.")
 
