@@ -1,6 +1,6 @@
-# Model Explaination
+# Model Explanation
 
-Model explaination is an important part of the model development process. It helps to understand the model's decision making process and also helps to debug the model. In this project, we have used SHAP (SHapley Additive exPlanations) to explain the model's decision making process. SHAP is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions.
+Model explanation is an important part of the model development process. It helps to understand the model's decision making process and also helps to debug the model. In this project, we have used SHAP (SHapley Additive exPlanations) to explain the model's decision making process. SHAP is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions.
 
 ## Interpreting Bar SHAP vizualization
 
@@ -32,7 +32,7 @@ Model explaination is an important part of the model development process. It hel
     - For example, "ai_000" sensor might consistently increase the likelihood of a fault as its value increases.
     - Another example, "ay_006" sensor might consistently decrease the likelihood of a fault as its value increases.
 
-## Interpreting Waterfall SHAP vizualization
+## Interpreting Waterfall SHAP Visualization
 
 ![image](shap_waterfall_plot.png)
 

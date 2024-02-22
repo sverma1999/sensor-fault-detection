@@ -55,6 +55,7 @@ http://localhost:8080/predict
   - **model.yaml:**
 - **docs:** This folder contains the documentation of the project in the form of images and markdown files.
 - **flowcharts:** This folder contains the flowcharts of the project in the form of images.
+- **mlruns:** This folder is created by MLFlow to store the model experiment logs.
 - **sensor:** All the code related to the sensor project goes here.
   - **cloud_storage:** Code to manage files across cloud goes here.
   - **components:** For creating independent components of the project, such as data ingestion, data preprocessing, model training, model prediction etc...
@@ -75,6 +76,7 @@ http://localhost:8080/predict
 - **requirements.txt:** This file lists all the required Python packages and their versions, making it easier to reproduce the project's environment and dependencies.
 - **setup.py:** This file is used to define the project's metadata and dependencies, making it easier to distribute and install the project as a Python package.
   - This can be run as `python setup.py install` to install the project as a package.
+- **start_experiment.sh:** This is a bash script to run the model experiment with MLFlow.
 
 # Code Flow
 
