@@ -177,10 +177,10 @@ class TrainingPipeline:
             )
 
             # output of the ModelPusher component for cloud testing
-            # model_pusher_artifact = model_pusher.initiate_model_pusher()
+            model_pusher_artifact = model_pusher.initiate_model_pusher()
 
-            # output of the ModelPusher component for local testing
-            model_pusher_artifact = model_pusher.initiate_model_pusher_locally()
+            # # output of the ModelPusher component for local testing
+            # model_pusher_artifact = model_pusher.initiate_model_pusher_locally()
 
             logging.info("Performed the data pusher operation")
             return model_pusher_artifact

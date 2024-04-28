@@ -186,52 +186,52 @@ class ModelEvaluationConfig:
     )
 
 
-# For local purpose
-@dataclass
-class ModelPusherConfig:
-    model_evaluation_dir: str = os.path.join(
-        training_pipeline_config.artifact_dir, MODEL_PUSHER_DIR_NAME
-    )
-    model_file_path = os.path.join(model_evaluation_dir, MODEL_FILE_NAME)
-
-    saved_model_path = os.path.join(
-        SAVED_MODEL_DIR, training_pipeline_config.timestamp, MODEL_FILE_NAME
-    )
-
-
-# # For cloud purpose >>>>>>>>>>>>
+# # For local purpose
 # @dataclass
 # class ModelPusherConfig:
-#     bucket_name: str = MODEL_PUSHER_BUCKET_NAME
+#     model_evaluation_dir: str = os.path.join(
+#         training_pipeline_config.artifact_dir, MODEL_PUSHER_DIR_NAME
+#     )
+#     model_file_path = os.path.join(model_evaluation_dir, MODEL_FILE_NAME)
 
-#     s3_model_key_path: str = os.path.join(MODEL_PUSHER_S3_KEY, MODEL_FILE_NAME)
-
-
-# # For cloud purpose >>>>>>>>>>>>
-# @dataclass
-# class PredictionPipelineConfig:
-#     prediction_data_file_name: str = PREDICTION_INPUT_FILE_NAME
-
-#     prediction_output_file_name: str = PREDICTION_OUTPUT_FILE_NAME
-
-#     prediction_data_bucket_name: str = PREDICTION_DATA_BUCKET
-
-#     model_bucket_name: str = MODEL_BUCKET_NAME
-
-#     model_file_path: str = os.path.join(MODEL_PUSHER_S3_KEY, MODEL_FILE_NAME)
+#     saved_model_path = os.path.join(
+#         SAVED_MODEL_DIR, training_pipeline_config.timestamp, MODEL_FILE_NAME
+#     )
 
 
-# For local testing purpose
+# For cloud purpose >>>>>>>>>>>>
+@dataclass
+class ModelPusherConfig:
+    bucket_name: str = MODEL_PUSHER_BUCKET_NAME
+
+    s3_model_key_path: str = os.path.join(MODEL_PUSHER_S3_KEY, MODEL_FILE_NAME)
+
+
+# For cloud purpose >>>>>>>>>>>>
 @dataclass
 class PredictionPipelineConfig:
-    prediction_data_file_name: str = LOCAL_PREDICTION_INPUT_FILE_NAME
+    prediction_data_file_name: str = PREDICTION_INPUT_FILE_NAME
 
-    prediction_output_file_name: str = LOCAL_PREDICTION_OUTPUT_FILE_NAME
+    prediction_output_file_name: str = PREDICTION_OUTPUT_FILE_NAME
 
-    prediction_data_bucket_name: str = LOCAL_PREDICTION_DATA_BUCKET
+    prediction_data_bucket_name: str = PREDICTION_DATA_BUCKET
 
-    model_bucket_name: str = LOCAL_MODEL_BUCKET_NAME
+    model_bucket_name: str = MODEL_BUCKET_NAME
 
-    model_file_path = os.path.join(
-        SAVED_MODEL_DIR, training_pipeline_config.timestamp, MODEL_FILE_NAME
-    )
+    model_file_path: str = os.path.join(MODEL_PUSHER_S3_KEY, MODEL_FILE_NAME)
+
+
+# # For local testing purpose
+# @dataclass
+# class PredictionPipelineConfig:
+#     prediction_data_file_name: str = LOCAL_PREDICTION_INPUT_FILE_NAME
+
+#     prediction_output_file_name: str = LOCAL_PREDICTION_OUTPUT_FILE_NAME
+
+#     prediction_data_bucket_name: str = LOCAL_PREDICTION_DATA_BUCKET
+
+#     model_bucket_name: str = LOCAL_MODEL_BUCKET_NAME
+
+#     model_file_path = os.path.join(
+#         SAVED_MODEL_DIR, training_pipeline_config.timestamp, MODEL_FILE_NAME
+#     )
