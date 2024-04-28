@@ -23,7 +23,20 @@ pip install -r requirements.txt
 ## Confluent Kafka Account (on web)
 
 - I highly recommend following this tutorial: https://github.com/Big-Data-01/confluent-tutorial/tree/main. You can set up account and following required items:
-
+- Create a cluster
+  - Name
+  - Cloud: GCP
+  - Region
+- Create a topic
+  - Name
+  - Partitions
+- Create Key and Secret
+  - Global Access
+- Create a schema registry
+  - Endpoint (created automatically)
+  - ID (created automatically)
+  - Key and Secret (need to create)
+- Get the following details:
   - Cluster API key
   - Cluster API secret
   - Cluster Bootstrap server
