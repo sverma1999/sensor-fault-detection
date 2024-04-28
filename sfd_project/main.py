@@ -64,7 +64,7 @@ async def train_route():
 
         if training_pipeline.is_pipeline_running:
             return Response("Training pipeline is already running!!")
-        # Run the training pipeline
+        # Run the training pipeline from local data storage
         training_pipeline.run_pipeline()
         return Response("Training pipeline executed successfully!!")
 
@@ -137,5 +137,5 @@ def main():
 if __name__ == "__main__":
     # Load environment variables from .env file
     load_dotenv()
-    # app_run(app, host=APP_HOST, port=APP_PORT)
-    main()
+    app_run(app, host=APP_HOST, port=APP_PORT)
+    # main()
