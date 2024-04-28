@@ -77,15 +77,15 @@ class ModelEvaluationArtifact:
     # train_model_metric_artifact: ClassificationMetricArtifact
 
 
-# # For cloud purpose
-# @dataclass
-# class ModelPusherArtifact:
-#     bucket_name: str
-#     s3_model_path: str
-
-
-# For local purpose
+# For cloud purpose
 @dataclass
 class ModelPusherArtifact:
-    saved_model_path: str
-    model_file_path: str
+    bucket_name: str
+    s3_model_path: str
+
+
+# # For local purpose
+# @dataclass
+# class ModelPusherArtifact:
+#     saved_model_path: str
+#     model_file_path: str
