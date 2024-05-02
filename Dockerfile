@@ -3,7 +3,7 @@ RUN apt update -y && apt install awscli -y
 
 WORKDIR /app
 
-COPY ./sf_project /app
+COPY ./sfd_project /app
 
 RUN pip install -r requirements.txt
 
