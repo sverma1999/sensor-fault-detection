@@ -1,0 +1,17 @@
+sfd_project/artifacts
+sfd_project/logs
+sfd_project/Infrastructure
+sfd_project/docs
+sfd_project/sensor.egg-info
+LICENSE
+README.md
+sfd_project/README.md
+sfd_project/notebooks
+sfd_project/mlruns
+sfd_project/flowcharts
+sfd_project/drawIO_files
+
+# Ignore any system or temporary files
+.DS_Store
+Thumbs.db
+*~
