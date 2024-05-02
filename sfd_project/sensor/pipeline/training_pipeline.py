@@ -29,8 +29,11 @@ from sensor.logger_code.logger import logging
 
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
-# from sensor.constant.trainingPipeline_consts import SAVED_MODEL_DIR
-# from sensor.cloud_storage.s3_syncer import s3Sync
+# from sensor.constant.trainingPipeline_consts import (
+#     MODEL_PUSHER_SAVED_MODEL_DIR,
+#     MODEL_PUSHER_BUCKET_NAME,
+# )
+# from sensor.cloud_storage.s3_syncer import S3Sync
 
 
 class TrainingPipeline:
@@ -52,6 +55,8 @@ class TrainingPipeline:
         self.model_evaluation_config = ModelEvaluationConfig()
 
         self.model_pusher_config = ModelPusherConfig()
+
+        # self.s3_sync = S3Sync()
 
     # Feed the data_ingestion_config to the DataIngestion component, and return the DataIngestionArtifact
     def start_data_ingestion(self) -> DataIngestionArtifact:
@@ -187,6 +192,30 @@ class TrainingPipeline:
         except Exception as e:
             raise SensorException(e, sys)
 
+    # # This function will sync and automatically upload the artifact directory to the s3 bucket
+    # def sync_artifact_dir_to_s3(self):
+    #     try:
+    #         aws_bucket_url = f"s3://{MODEL_PUSHER_BUCKET_NAME}/artifact/{self.training_pipeline_config.timestamp}"
+    #         self.s3_sync.sync_folder_to_s3(
+    #             folder=self.training_pipeline_config.artifact_dir,
+    #             aws_bucket_url=aws_bucket_url,
+    #         )
+    #     except Exception as e:
+    #         raise SensorException(e, sys)
+
+    # # This function will sync and automatically upload the saved_model directory to the s3 bucket
+    # def sync_saved_model_dir_to_s3(self):
+    #     try:
+    #         aws_bucket_url = (
+    #             f"s3://{MODEL_PUSHER_BUCKET_NAME}/{MODEL_PUSHER_SAVED_MODEL_DIR}"
+    #         )
+    #         self.s3_sync.sync_folder_to_s3(
+    #             folder=MODEL_PUSHER_SAVED_MODEL_DIR, aws_bucket_url=aws_bucket_url
+    #         )
+
+    #     except Exception as e:
+    #         raise SensorException(e, sys)
+
     # This function will run the entire training pipeline
     def run_pipeline(
         self,
@@ -231,6 +260,12 @@ class TrainingPipeline:
             TrainingPipeline.is_pipeline_running = False
 
             logging.info("Training pipeline completed")
+
+            # self.sync_artifact_dir_to_s3()
+            # self.sync_saved_model_dir_to_s3()
+
+            # logging.info("Artifact and saved_model directories are synced to s3 bucket")
         except Exception as e:
+            # self.sync_artifact_dir_to_s3()
             TrainingPipeline.is_pipeline_running = False
             raise SensorException(e, sys)

@@ -1,7 +1,7 @@
 import os
 
 
-class s3Sync:
+class S3Sync:
     # this method will sync and upload the folders like artifact and saved_model to s3 bucket
     # folder is thr path of the folder which you want to upload
     def sync_folder_to_s3(self, folder, aws_bucket_url):
