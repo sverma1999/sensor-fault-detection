@@ -148,7 +148,6 @@ dmypy.json
 
 # others
 credentials/
-Dockerfile
 sfd_project/sfDetectionVenv/
 artifact/
 artifact_old/
