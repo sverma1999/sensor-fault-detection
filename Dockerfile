@@ -3,8 +3,8 @@ RUN apt update -y && apt install awscli -y
 
 WORKDIR /app
 
-COPY . /app
+COPY ./sf_project /app
 
-RUN pip install -r sf_project/requirements.txt
+RUN pip install -r requirements.txt
 
-CMD ["python3", "sf_project/main.py"]
+CMD ["python3", "main.py"]
