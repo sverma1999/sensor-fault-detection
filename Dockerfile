@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY ./sfd_project /app
 
-RUN pip install -r requirements.txt
+RUN pip install -r /app/requirements.txt
 
-CMD ["python3", "main.py"]
+CMD ["python3", "/app/main.py"]
