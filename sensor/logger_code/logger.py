@@ -6,7 +6,7 @@ from from_root import from_root
 
 # log file name with timestamp
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
-LOGFILE_ROOT_PATH = "sfd_project/logs"
+LOGFILE_ROOT_PATH = "logs"
 # path to log file
 # Note: do not add LOG_FILE while creating logs_path
 logs_path = os.path.join(from_root(), LOGFILE_ROOT_PATH)

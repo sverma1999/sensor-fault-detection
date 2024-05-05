@@ -250,6 +250,7 @@ class TrainingPipeline:
             # check if the trained model is accepted or not. If not accepted then logg the message and return None
             if not model_evaluation_artifact.is_model_accepted:
                 logging.info("Trained model is not better than the best model")
+                TrainingPipeline.is_pipeline_running = False
                 return None
 
             # if accepted then push the model

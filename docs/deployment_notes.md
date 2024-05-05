@@ -156,6 +156,8 @@ Repeat same for prediction bucket and save the name in the constant `PREDICTION_
   In GitHub repository, you will see the runner is active.
   ![image](runners.png)
 
+- Test Docker locally first, before running the workflow.
+
 
 - To create GithHub workflow, follow the steps below:
   - Go to `.github/workflows` folder

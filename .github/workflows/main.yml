@@ -7,7 +7,13 @@ on:
     paths-ignore:
       - "data_collection/**"
       - "README.md"
-      - "sfd_project/README.md"
+      - "data/**"
+      - "artifact/**"
+      - "docs/**"
+      - "drawIO_files/**"
+      - "flowcharts/**"
+      - "mlruns/**"
+      - "notebooks/**"
 
 jobs:
   Continuous-Integration:
@@ -40,7 +46,6 @@ jobs:
           ECR_REPOSITORY: ${{ secrets.ECR_REPO }}
           IMAGE_TAG: latest
         run: |
-          cd sfd_project
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .  
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"

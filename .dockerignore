@@ -1,0 +1,19 @@
+artifact/
+logs/
+Infrastructure/
+data/
+docs/
+sensor.egg-info/
+LICENSE
+README.md
+notebooks/
+mlruns/
+flowcharts/
+drawIO_files/
+data_collection/
+credentials/
+
+# Ignore any system or temporary files
+.DS_Store
+Thumbs.db
+*~
