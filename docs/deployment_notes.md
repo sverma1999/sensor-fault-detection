@@ -177,3 +177,21 @@ Repeat same for prediction bucket and save the name in the constant `PREDICTION_
   - Go to `Actions`
   - You will see the workflow running
 
+
+
+
+# Additonally we can add Terraform to automate the deployment process
+
+- Install Terraform in local machine
+  - I used MacOS, so I installed Terraform using Homebrew
+  - Run the command:
+    ```bash
+    brew tap hashicorp/tap
+    brew install hashicorp/tap/terraform
+    ```
+  - Check the version of Terraform
+    ```bash
+    terraform --version
+    ```
+
+
