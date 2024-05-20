@@ -233,6 +233,3 @@ Under Construction...
 
 Under Construction...
 
-## Acknowledgment
-
-I learned about this project from a course at [Inuerons](https://ineuron.ai/).
