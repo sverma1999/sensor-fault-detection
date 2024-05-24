@@ -4,16 +4,6 @@ on:
       - terraform_setup
     paths:
       - infrastructure/*
-    paths-ignore:
-      - "data_collection/**"
-      - "README.md"
-      - "data/**"
-      - "artifact/**"
-      - "docs/**"
-      - "drawIO_files/**"
-      - "flowcharts/**"
-      - "mlruns/**"
-      - "notebooks/**"
 
 name: Apply changes to infrastructure
 
