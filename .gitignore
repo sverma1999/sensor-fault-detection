@@ -155,3 +155,11 @@ artifact_old/
 logs/
 saved_model/
 mlruns_old/
+infrastructure_old/
+infrastructure/sensor_ec2/variables.tf
+infrastructure/sensor_ecr/variables.tf
+infrastructure/sensor_model_bucket/variables.tf
+infrastructure/sensor_pred_data_bucket/variables.tf
+load_env.sh
+.terraform/
+.terraform.lock.hcl

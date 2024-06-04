@@ -5,12 +5,12 @@ variable "aws_region" {
 
 variable "model_bucket_name" {
   type    = string
-  default = "sensor-model"
+  default = "sensor-model-sv2"
 }
 
 variable "aws_account_id" {
   type    = string
-  default = "347460842118"
+  default = "975050177947"
 }
 
 variable "force_destroy_bucket" {

@@ -127,7 +127,7 @@ Repeat same for prediction bucket and save the name in the constant `PREDICTION_
     ```
 - Keep the terminal open, we can set up self-hosted runner in this terminal.
 
-## Configure EC2 as self-hosted runner (under construction)
+## Configure EC2 as self-hosted runner
 
 - Go to GitHub repository of the project
 - Go to `Settings`
@@ -194,4 +194,35 @@ Repeat same for prediction bucket and save the name in the constant `PREDICTION_
     terraform --version
     ```
 
-
+- cd to the infrastructure folder
+- Add variables in following paths:
+  - infrastructure/sensor_ec2/variables.tf
+  - infrastructure/sensor_ecr/variables.tf
+  - infrastructure/sensor_model_bucket/variables.tf
+  - infrastructure/sensor_pred_data_bucket/variables.tf
+- Run the command 1:
+  ```bash
+  terraform init
+  ```
+- Run the command 2:
+  ```bash
+  terraform plan
+  ```
+- Run the command 3:
+  ```bash
+  terraform apply --auto-approve
+  ```
+- Update the ECR_REPO to the repository named in terraform output.
+- After the infrastructure is created, you will see all the resources created in AWS
+- Now you can connect to the EC2 instance, install and run the docker image (follow the steps above):
+  - Connect to EC2 instance
+  - Configure EC2 as self-hosted runner
+  - Run the runner in EC2 instance terminal
+  - Once the running is started listening for jobs, you can run the workflow in GitHub repository
+- The workflow will build the docker image and push it to ECR
+- The workflow will also pull the image from ECR and run it in EC2 instance
+- The Application will be deployed in EC2 instance and you can test it by going to the public IP of the EC2 instance.
+- To destroy the infrastructure, run the command:
+  ```bash
+  terraform destroy --auto-approve
+  ```
