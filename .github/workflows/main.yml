@@ -3,7 +3,7 @@ name: Deploy Application Docker Image to EC2 instance
 on:
   push:
     branches:
-      - main
+      - terraform_setup
     paths-ignore:
       - "data_collection/**"
       - "README.md"
