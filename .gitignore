@@ -164,3 +164,5 @@ infrastructure/sensor_pred_data_bucket/variables.tf
 load_env.sh
 .terraform/
 .terraform.lock.hcl
+temp.ipynb
+climate_day.png

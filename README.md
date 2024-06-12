@@ -26,6 +26,14 @@ Introducing a machine learning algorithm/system capable of predicting whether a 
 - Binary classification approach: APS-related failures vs. other failures.
 - Priority on reducing false positive predictions to optimize cost savings.
 
+## Dashboard
+You run the dashboard using Panel. To set up the dashboard, follow the steps in the documentation [here](docs/dashboard_notes.md).
+
+As you can see below, **the average monthly cost will go down by 86% if sensor fault detection is implemented.**
+
+![image](notebooks/dashboard.png)
+
+
 ## Tech Stack Used
 
 1. Python

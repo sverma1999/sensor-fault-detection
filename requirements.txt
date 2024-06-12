@@ -151,4 +151,7 @@ Werkzeug==3.0.1
 wincertstore==0.2
 xgboost==2.0.3
 zipp==3.17.0
+hvplot
+jupyterlab
+jupyter_bokeh
 -e .
