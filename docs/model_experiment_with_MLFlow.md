@@ -44,3 +44,14 @@ learning_rate: 0.3
 n_estimators: 300
 max_depth: 5
 ```
+
+This gives us the model with following metrics:
+  
+  ```yaml
+  Precision: 0.838
+  Recall: 0.887
+  F1 Score: 0.862
+  ```
+
+
+
