@@ -26,9 +26,10 @@ http://localhost:5006/Dashboard
 
 
 There is one table and two plots in the dashboard.
+ - First plot shows number of failure due to APS reported and how critical it is. 
  - Table shows the fault rates of sensors of APS Failure dataset.
- - First plot shows the distribution of the sensors.
  - Second plot shows cost analysis after using detection system.
+ - Third plot shows the distribution of the low, medium, high faulty sensors.
 
 
 

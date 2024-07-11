@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2024-06-27T17:31:47.963Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="q30HJIQZIkqi7VkIhFUT" version="21.2.1" type="device">
+  <diagram name="Page-1" id="Oai9SStXc697Y4fFJnPI">
+    <mxGraphModel dx="1306" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E3TqtBi46r5Paa-JoAMz-1" target="E3TqtBi46r5Paa-JoAMz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-1" value="MongoDB Database" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" vertex="1" parent="1">
+          <mxGeometry x="258.8" y="80" width="102.4" height="102.4" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-6" value="" style="swimlane;startSize=0;labelBorderColor=none;labelBackgroundColor=none;fillStyle=auto;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="270" width="660" height="370" as="geometry">
+            <mxRectangle x="230" y="270" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-7" target="E3TqtBi46r5Paa-JoAMz-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-7" value="Data Validation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-8" target="E3TqtBi46r5Paa-JoAMz-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-8" value="Data Transformation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="20" y="155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-9" target="E3TqtBi46r5Paa-JoAMz-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-9" value="Model Building" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="140" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-10" target="E3TqtBi46r5Paa-JoAMz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-10" value="Model Evaluation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="260" y="155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-11" target="E3TqtBi46r5Paa-JoAMz-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-11" value="Model Pusher" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="260" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="E3TqtBi46r5Paa-JoAMz-6" source="E3TqtBi46r5Paa-JoAMz-17" target="E3TqtBi46r5Paa-JoAMz-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-17" value="Endpoints&lt;br&gt;Ex: http://localhost/predict" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="480" y="20" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-21" value="Dashboard" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="E3TqtBi46r5Paa-JoAMz-6">
+          <mxGeometry x="495" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E3TqtBi46r5Paa-JoAMz-12" value="Data Science Pipeline" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
